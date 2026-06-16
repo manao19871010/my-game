@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy — Vortexly</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500;600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        :root {
+            --bg:        #0a0a0f;
+            --surface:   #12121a;
+            --card:      #1a1a26;
+            --border:    #2a2a3e;
+            --neon:      #00f5a0;
+            --neon2:     #00d9f5;
+            --hot:       #ff3d71;
+            --gold:      #ffd166;
+            --text:      #e8e8f0;
+            --muted:     #7070a0;
+            --font-head: 'Bebas Neue', sans-serif;
+            --font-body: 'DM Sans', sans-serif;
+            --font-mono: 'JetBrains Mono', monospace;
+        }
+
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            background: var(--bg);
+            color: var(--text);
+            font-family: var(--font-body);
+            min-height: 100vh;
+            overflow-x: hidden;
+            line-height: 1.7;
+        }
+
+        body::before {
+            content: '';
+            position: fixed;
+            inset: 0;
+            background-image: linear-gradient(var(--border) 1px, transparent 1px), linear-gradient(90deg, var(--border) 1px, transparent 1px);
+            background-size: 40px 40px;
+            opacity: 0.25;
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .blob {
+            position: fixed;
+            border-radius: 50%;
+            filter: blur(120px);
+            opacity: 0.12;
+            pointer-events: none;
+            z-index: 0;
+        }
+        .blob-1 { width: 500px; height: 500px; background: var(--neon);  top: -150px; left: -150px; }
+        .blob-2 { width: 400px; height: 400px; background: var(--neon2); bottom: -100px; right: -50px; }
+
+        .legal-wrapper {
+            max-width: 900px;
+            margin: 60px auto;
+            padding: 0 2rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        .back-home {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--muted);
+            text-decoration: none;
+            font-family: var(--font-mono);
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            padding: 8px 16px;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            background: var(--surface);
+            transition: all 0.2s;
+            margin-bottom: 40px;
+        }
+
+        .back-home:hover {
+            color: var(--neon);
+            border-color: var(--neon);
+            box-shadow: 0 0 15px rgba(0,245,160,0.15);
+        }
+
+        .legal-card {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 48px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+        }
+
+        h1 {
+            font-family: var(--font-head);
+            font-size: 3.5rem;
+            letter-spacing: 2px;
+            line-height: 1;
+            margin-bottom: 12px;
+            background: linear-gradient(90deg, var(--neon), var(--neon2));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .meta-info {
+            font-family: var(--font-mono);
+            font-size: 0.8rem;
+            color: var(--muted);
+            margin-bottom: 32px;
+            display: flex;
+            gap: 20px;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 16px;
+        }
+
+        .meta-info span em { color: var(--neon); font-style: normal; }
+
+        h2 {
+            font-family: var(--font-head);
+            font-size: 1.8rem;
+            letter-spacing: 1px;
+            color: var(--text);
+            margin: 32px 0 16px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        h2::before {
+            content: '//';
+            color: var(--neon);
+            font-family: var(--font-mono);
+            font-size: 1rem;
+        }
+
+        p {
+            color: rgba(232, 232, 240, 0.85);
+            margin-bottom: 16px;
+            font-size: 0.95rem;
+        }
+
+        ul {
+            list-style: none;
+            margin-bottom: 20px;
+            padding-left: 6px;
+        }
+
+        ul li {
+            position: relative;
+            padding-left: 20px;
+            margin-bottom: 8px;
+            color: rgba(232, 232, 240, 0.85);
+            font-size: 0.95rem;
+        }
+
+        ul li::before {
+            content: '•';
+            position: absolute;
+            left: 0;
+            color: var(--neon2);
+            font-weight: bold;
+        }
+
+        .partner-highlight {
+            background: rgba(0, 217, 245, 0.04);
+            border: 1px dashed rgba(0, 217, 245, 0.3);
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+
+        .partner-highlight h3 {
+            font-size: 1.05rem;
+            color: var(--neon2);
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+
+        a.legal-link {
+            color: var(--neon);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+        a.legal-link:hover { text-decoration: underline; color: var(--neon2); }
+
+        @media (max-width: 768px) {
+            .legal-wrapper { margin: 30px auto; }
+            .legal-card { padding: 24px; }
+            h1 { font-size: 2.5rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+
+    <div class="legal-wrapper">
+        <a href="/" class="back-home"><i class="fas fa-arrow-left"></i> Back to Home</a>
+
+        <div class="legal-card">
+            <h1>Privacy Policy</h1>
+            <div class="meta-info">
+                <span>Platform: <em>https://vortex-ly.com</em></span>
+                <span>Updated: <em>May 28, 2026</em></span>
+            </div>
+
+            <p>At Vortexly, accessible from https://vortex-ly.com, one of our main priorities is the privacy of our visitors. This Privacy Policy document contains types of information that is collected and recorded by Vortexly and how we use it, complying fully with the General Data Protection Regulation (GDPR) and the California Consumer Privacy Act (CCPA).</p>
+
+            <h2>1. Log Files and Technical Data</h2>
+            <p>Vortexly follows a standard procedure of using log files. These files log visitors when they visit websites. The information collected by log files includes internet protocol (IP) addresses, browser type, Internet Service Provider (ISP), date and time stamp, referring/exit pages, and possibly the number of clicks. These are not linked to any information that is personally identifiable. The purpose of the information is for analyzing trends, administering the site, tracking users' movement on the website, and gathering demographic information.</p>
+
+            <h2>2. Advertising Partners & Third-Party Cookies</h2>
+            <p>To keep our browser gaming platform 100% free, we work closely with prominent third-party advertising networks and game distributors. These networks automatically receive your IP address when this occurs, and use cookies and web beacons to measure the effectiveness of their advertising campaigns and/or to personalize the advertising content that you see.</p>
+
+            <div class="partner-highlight">
+                <h3>Google AdSense</h3>
+                <p>Google is one of the third-party vendors on our site. It uses cookies, known as DART cookies, to serve ads to our site visitors based upon their visit to our site and other sites on the internet. You may choose to decline the use of DART cookies by visiting the Google ad and content network Privacy Policy at the following URL: <a href="https://policies.google.com/technologies/ads" class="legal-link" target="_blank" rel="noopener">https://policies.google.com/technologies/ads</a></p>
+            </div>
+
+            <div class="partner-highlight">
+                <h3>GameDistribution</h3>
+                <p>Our game provision infrastructure is powered by GameDistribution. They handle game delivery, localized content allocation, and intra-game monetization. GameDistribution may process device specifications, user interaction events, and approximate geographical status to ensure game stability and tailored experiences. Their privacy specifications can be fully audited on their centralized legal node.</p>
+            </div>
+
+            <h2>3. GDPR Data Protection Rights (EEA Residents)</h2>
+            <p>We want to ensure you are fully aware of all of your data protection rights. Every user from the European Economic Area is entitled to the following:</p>
+            <ul>
+                <li><strong>The right to access</strong> – You have the right to request copies of your personal data.</li>
+                <li><strong>The right to rectification</strong> – You have the right to request that we correct any information you believe is inaccurate.</li>
+                <li><strong>The right to erasure</strong> – You have the right to request that we erase your personal data, under certain conditions.</li>
+                <li><strong>The right to restrict processing</strong> – You have the right to request that we restrict the processing of your personal data.</li>
+                <li><strong>The right to data portability</strong> – You have the right to request that we transfer the data that we have collected to another organization.</li>
+            </ul>
+
+            <h2>4. CCPA Privacy Rights (California Residents)</h2>
+            <p>Under the CCPA, among other rights, California consumers have the right to:</p>
+            <ul>
+                <li>Request that a business that collects a consumer's personal data disclose the categories and specific pieces of personal data that a business has collected about consumers.</li>
+                <li>Request that a business delete any personal data about the consumer that a business has collected.</li>
+                <li><strong>Request that a business that sells a consumer's personal data, not sell the consumer's personal data (Opt-Out).</strong> When personalizing ad states, you can interact with browser settings or regional framework prompts to secure your data from trade distribution.</li>
+            </ul>
+
+            <h2>5. Contact Infrastructure</h2>
+            <p>If you have additional questions or require more information about our Privacy Policy, do not hesitate to contact us through our dedicated legal registry:</p>
+            <p>Email: <a href="mailto:manao19871010@gmail.com" class="legal-link">manao19871010@gmail.com</a></p>
+        </div>
+    </div>
+
+</body>
+</html>

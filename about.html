@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us — Vortexly</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500;600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --bg:        #0a0a0f;
+            --surface:   #12121a;
+            --card:      #1a1a26;
+            --border:    #2a2a3e;
+            --neon:      #00f5a0;
+            --neon2:     #00d9f5;
+            --hot:       #ff3d71;
+            --text:      #e8e8f0;
+            --muted:     #7070a0;
+            --font-head: 'Bebas Neue', sans-serif;
+            --font-body: 'DM Sans', sans-serif;
+        }
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        body { background: var(--bg); color: var(--text); font-family: var(--font-body); min-height: 100vh; line-height: 1.6; }
+        body::before {
+            content: ''; position: fixed; inset: 0; pointer-events: none; opacity: 0.25; z-index: 0;
+            background-image: linear-gradient(var(--border) 1px, transparent 1px), linear-gradient(90deg, var(--border) 1px, transparent 1px);
+            background-size: 40px 40px;
+        }
+        header { position: sticky; top: 0; z-index: 100; background: rgba(10,10,15,0.85); backdrop-filter: blur(16px); border-bottom: 1px solid var(--border); }
+        .nav-inner { max-width: 1400px; margin: 0 auto; padding: 0 2rem; height: 64px; display: flex; align-items: center; justify-content: space-between; }
+        .logo { display: flex; align-items: center; gap: 10px; text-decoration: none; }
+        .logo-icon { width: 36px; height: 36px; background: linear-gradient(135deg, var(--neon), var(--neon2)); border-radius: 8px; display: flex; align-items: center; justify-content: center; color: #0a0a0f; font-size: 18px; }
+        .logo-text { font-family: var(--font-head); font-size: 1.8rem; letter-spacing: 2px; color: var(--text); }
+        .logo-text span { color: var(--neon); }
+        nav { display: flex; gap: 4px; }
+        nav a { color: var(--muted); text-decoration: none; font-size: 0.85rem; font-weight: 500; letter-spacing: 0.05em; text-transform: uppercase; padding: 6px 14px; border-radius: 6px; transition: all 0.2s; }
+        nav a:hover, nav a.active { color: var(--neon); background: rgba(0,245,160,0.08); }
+        
+        .container { max-width: 800px; margin: 60px auto; padding: 0 2rem; position: relative; z-index: 1; }
+        h1 { font-family: var(--font-head); font-size: 3.5rem; letter-spacing: 2px; margin-bottom: 20px; color: var(--text); }
+        h1 span { background: linear-gradient(90deg, var(--neon), var(--neon2)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        p { color: var(--muted); margin-bottom: 20px; font-size: 1.05rem; }
+        .feature-box { background: var(--surface); border: 1px solid var(--border); padding: 24px; border-radius: 12px; margin-top: 30px; }
+        .feature-box h3 { color: var(--neon); margin-bottom: 10px; font-weight: 600; }
+        
+        footer { background: var(--surface); border-top: 1px solid var(--border); padding: 32px 2rem; text-align: center; margin-top: 120px; font-size: 0.85rem; color: var(--muted); }
+        footer a { color: var(--muted); text-decoration: none; margin: 0 10px; transition: color 0.2s; }
+        footer a:hover { color: var(--neon); }
+        @media (max-width: 768px) { nav { display: none; } }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="nav-inner">
+            <a href="/" class="logo">
+                <div class="logo-icon"><i class="fas fa-gamepad"></i></div>
+                <span class="logo-text">VORTE<span>XLY</span></span>
+            </a>
+            <nav>
+                <a href="/">Home</a>
+                <a href="/about.html" class="active">About</a>
+                <a href="/contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <h1>ABOUT <span>VORTEXTLY</span></h1>
+        <p>Welcome to Vortexly, your ultimate destination for instant, free browser gaming. We believe that playing games should be effortless, accessible, and completely hassle-free. That’s why we built a platform where you can dive into high-quality HTML5 titles instantly — no downloads, no subscriptions, and no complicated registrations required.</p>
+        
+        <p>Whether you have five minutes to spare on your mobile phone or an afternoon to kill on your desktop, our curated selection of arcade classics, brain-teasing puzzles, and deep strategy games will keep you entertained anywhere, anytime.</p>
+
+        <div class="feature-box">
+            <h3>🎮 Our Mission</h3>
+            <p style="margin: 0;">To deliver clean, safe, and lightning-fast gaming experiences to player communities worldwide. We update our repository weekly with fresh titles to ensure you always find something new to conquer.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p> <a href="/privacy.html">Privacy Policy</a> | <a href="/contact.html">Contact Us</a></p>
+    </footer>
+</body>
+</html>
