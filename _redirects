@@ -1,1 +1,2 @@
-/games/*  /game.html?slug=:splat  200
+/games/* /game 200
+/* /index.html 200
