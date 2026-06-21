@@ -1,1 +1,2 @@
-google.com, pub-7234254765347291, DIRECT, f08c47fec0942fa0
+# GameDistribution (Azerion)
+gamedistribution.com, DIRECT, 86fdd24c50e642f8
