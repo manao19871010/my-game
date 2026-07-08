@@ -89,13 +89,13 @@
             margin: 2px auto;
             padding: 0 20px;
             display: grid;
-            grid-template-columns: 120px 1fr 400px;
+            grid-template-columns: 180px 1fr 400px;
             gap: 24px;
             flex: 1;
             padding-top: 20px;
         }
 
-        /* Left sidebar - Corresponding to the left green box */
+        /* Left sidebar - Corresponds to the left content area */
         .left-sidebar {
             display: flex;
             flex-direction: column;
@@ -109,7 +109,6 @@
             padding-left: 10px;
             margin-bottom: 4px;
         }
-
 
         .iframe-container {
             position: relative;
@@ -169,7 +168,7 @@
             line-height: 1.6;
         }
 
-        /* Right sidebar - Corresponding to the right green box */
+        /* Right sidebar - Corresponds to the right content area */
         .sidebar {
             display: flex;
             flex-direction: column;
@@ -188,12 +187,6 @@
             justify-content: center;
             overflow: hidden;
             box-sizing: border-box;
-        }
-
-        .rec-grid {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 12px;
         }
 
         .rec-card {
@@ -231,7 +224,7 @@
             color: var(--text-muted);
         }
 
-        /* More games section at the bottom of the right sidebar - Fills the blank space below the right green box */
+        /* More games section at the bottom of the right sidebar - Fills the blank space below the ad area */
         .more-games-section {
             margin-top: 10px;
         }
@@ -314,7 +307,8 @@
         }
 
         .rec-grid {
-            display: grid;
+            display: flex;
+            flex-direction: column;
             grid-template-columns: repeat(3, 1fr);
             gap: 10px;
             width: 100%;
@@ -367,10 +361,70 @@
 
         .left-game-item {
             display: flex;
-            align-items: center;
+            flex-direction: column; /* Key: Switch to vertical layout */
+            align-items: flex-start; /* Align text to the left */
+            gap: 8px; /* Spacing between image and text */
+            padding: 12px;
+            min-height: auto; /* Remove minimum height constraint */
+            height: auto; /* Remove fixed height */
+            border-radius: 6px;
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            cursor: pointer;
+            transition: all 0.2s;
+            text-decoration: none;
+            color: var(--text-pure);
+            box-sizing: border-box;
+            margin-bottom: 8px;
+            overflow: visible; /* Allow content to overflow */
+        }
+
+        .left-game-item:hover {
+            border-color: var(--accent);
+            transform: translateY(-2px); /* Optional: Slight upward shift for better interaction feedback */
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .left-game-item img {
+            width: 120px;
+            height: 60px; /* Fixed image height, automatic width scaling */
+            object-fit: cover;
+            border-radius: 6px;
+            flex-shrink: 0;
+            display: block;
+        }
+
+        /* Optional: Add padding or background color to improve text readability */
+        .left-game-item .game-info {
+            flex: 1;
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .left-game-item .game-title {
+            font-weight: bold;
+            font-size: 14px;
+            margin: 0 0 4px 0;
+            line-height: 1.3;
+            color: var(--text-pure);
+        }
+
+        .left-game-item .game-desc {
+            font-size: 12px;
+            line-height: 1.4;
+            color: var(--text-secondary);
+            display: -webkit-box;
+            -webkit-line-clamp: 3; /* Show up to 3 lines, truncate overflow */
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .reft-game-item {
+            display: flex;
+            align-items: stretch;
             gap: 10px;
-            padding: 10px 8px;
-            min-height: 60px;
+            min-height: 100px;
             border-radius: 6px;
             background: var(--card-bg);
             border: 1px solid var(--border-color);
@@ -380,19 +434,23 @@
             color: var(--text-pure);
             box-sizing: border-box;
             margin-bottom: 5px;
+            border: 1px solid #fff;
+            height: 50px;
+            padding: 0;
+            overflow: hidden;
         }
 
-        .left-game-item:hover {
-            border-color: var(--accent);
-            transform: translateX(2px);
-        }
-
-        .left-game-item img {
+        .reft-game-item .images {
             width: 44px;
-            height: 33px;
-            object-fit: cover;
-            border-radius: 4px;
+            width: 100% !important;
+            border-radius: 4px 0 0 4px;
             flex-shrink: 0;
+            display: block;
+        }
+
+        .reft-game-item:hover {
+            border-color: var(--accent);
+            transform: translateX(20px);
         }
 
         .left-game-item span {
@@ -401,7 +459,7 @@
             overflow: hidden;
             text-overflow: ellipsis;
             display: -webkit-box;
-            -webkit-line-clamp: 2;
+            -webkit-line-clamp: 2; /* Show up to 2 lines, truncate overflow */
             -webkit-box-orient: vertical;
         }
 
@@ -562,7 +620,7 @@
             letter-spacing: 0.08em;
             text-transform: uppercase;
             padding: 8px 18px;
-            border-radius: 10px;
+            borderRadius: 10px;
             transition: all 0.2s ease;
         }
 
@@ -578,7 +636,7 @@
             align-items: center;
             background: #12121a;
             border: 1px solid #2a2a3e;
-            border-radius: 10px;
+            borderRadius: 10px;
             overflow: hidden;
             transition: border-color 0.2s ease;
         }
@@ -617,7 +675,7 @@
             font-family: 'JetBrains Mono', monospace;
             font-size: 0.75rem;
             padding: 5px 14px;
-            border-radius: 20px;
+            borderRadius: 20px;
             white-space: nowrap;
         }
 
@@ -626,7 +684,7 @@
             width: 6px;
             height: 6px;
             background: #00f5a0;
-            border-radius: 50%;
+            borderRadius: 50%;
             animation: pulse 2s infinite;
         }
 
@@ -696,7 +754,7 @@
             border: 4px solid transparent;
             border-top: 4px solid #00f5a0;
             border-right: 4px solid #00d9f5;
-            border-radius: 50%;
+            borderRadius: 50%;
             animation: spin 1.2s linear infinite;
             filter: drop-shadow(0 0 8px #00f5a0) drop-shadow(0 0 16px rgba(0, 245, 160, 0.4));
         }
@@ -708,7 +766,7 @@
             border: 3px solid transparent;
             border-bottom: 3px solid #00d9f5;
             border-left: 3px solid #00f5a0;
-            border-radius: 50%;
+            borderRadius: 50%;
             animation: spin 0.8s linear infinite reverse;
         }
 
@@ -787,7 +845,7 @@
         .social-link {
             width: 36px;
             height: 36px;
-            border-radius: 8px;
+            borderRadius: 8px;
             border: 1px solid var(--border);
             display: flex;
             align-items: center;
@@ -859,25 +917,80 @@
         }
 
         .game-tags {
-    display: flex;
-    gap: 8px;
-    flex-wrap: wrap;
-    margin-top: 12px;
-}
-.tag-pill {
-    padding: 5px 12px;
-    border-radius: 20px;
-    background: rgba(0,245,160,0.1);
-    border: 1px solid rgba(0,245,160,0.3);
-    color: var(--neon);
-    font-size: 0.75rem;
-    text-decoration: none;
-    transition: all var(--transition);
-}
-.tag-pill:hover {
-    background: var(--neon);
-    color: #0a0a0f;
-}
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+            margin-top: 12px;
+        }
+
+        .tag-pill {
+            padding: 5px 12px;
+            borderRadius: 20px;
+            background: rgba(0, 245, 160, 0.1);
+            border: 1px solid rgba(0, 245, 160, 0.3);
+            color: var(--neon);
+            font-size: 0.75rem;
+            text-decoration: none;
+            transition: all var(--transition);
+        }
+
+        .tag-pill:hover {
+            background: var(--neon);
+            color: #0a0a0f;
+        }
+
+        .more-games__list {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        /* Reduce cover image height */
+        .more-game-card__cover {
+            width: 100%;
+            aspect-ratio: 16 / 9;
+            max-height: 205px;
+            overflow: hidden;
+            borderRadius: 6px;
+        }
+
+        /* Tighten text spacing */
+        .more-game-card__info {
+            display: flex;
+            flex-direction: column;
+            gap: 3px;
+            padding: 0 2px;
+        }
+
+        .more-game-card__name {
+            font-size: 14px;
+            font-weight: 600;
+            color: #fff;
+            margin: 0;
+            line-height: 1.3;
+        }
+
+        .more-game-card__desc {
+            font-size: 11px;
+            color: #ccc;
+            margin: 0;
+            line-height: 1.4;
+            display: -webkit-box;
+            -webkit-line-clamp: 8; /* Show up to 8 lines, truncate overflow */
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        .left-game-name {
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+        .left-game-desc {
+            font-size: 10px;
+            color: #ccc;
+            height: auto;
+        }
     </style>
 </head>
 
@@ -891,7 +1004,6 @@
             </a>
             <nav id="topNav">
                 <a href="#" class="active" onclick="filterByCategory('all', event)">Home</a>
-
                 <a href="about.html">About</a>
                 <a href="contact.html">Contact</a>
             </nav>
@@ -931,41 +1043,31 @@
                     <button class="control-btn" onclick="goFullScreen()">🖵 Fullscreen / Esc</button>
                 </div>
             </div>
-             <section class="game-detail-section">
-    <div class="game-info-bar">
-        <h1 id="gameTitle" class="game-detail-title">Loading...</h1>
-        <div class="game-meta">
-            <span class="meta-item"> <span id="gameRating"></span></span>
-            <span class="meta-item"><span id="gamePlayers"></span> </span>
-        </div>
-        <div class="game-tags" id="gameTags"></div>
-    </div>
+            <section class="game-detail-section">
+                <div class="game-info-bar">
+                    <h1 id="gameTitle" class="game-detail-title">Loading...</h1>
+                    <div class="game-meta">
+                        <span class="meta-item"> <span id="gameRating"></span></span>
+                        <span class="meta-item"><span id="gamePlayers"></span> </span>
+                    </div>
+                    <div class="game-tags" id="gameTags"></div>
+                </div>
 
-    <div class="detail-block">
-        <h2 class="detail-heading">Game Overview</h2>
-        <p class="detail-text" id="gameOverview">Loading...</p>
-    </div>
+                <div class="detail-block">
+                    <h2 class="detail-heading">Game Overview</h2>
+                    <p class="detail-text" id="gameOverview">Loading...</p>
+                </div>
 
-    <div class="detail-block">
-        <h2 class="detail-heading">How to Play</h2>
-        <p class="detail-text" id="gameHowToPlay">Loading...</p>
-    </div>
+                <div class="detail-block">
+                    <h2 class="detail-heading">How to Play</h2>
+                    <p class="detail-text" id="gameHowToPlay">Loading...</p>
+                </div>
 
-    <div class="detail-block">
-        <h2 class="detail-heading">Game Features</h2>
-        <ul class="feature-list" id="gameFeatures"></ul>
-    </div>
-</section>
-            <article class="info-card">
-                <h1 id="gameTitle"></h1>
-                <p class="description" id="gameDesc"></p>
-            </article>
-            
-        </section>
-        
-
-        <aside class="sidebar">
-            <div class="rec-grid" id="recommendationGrid"></div>
+                <div class="detail-block">
+                    <h2 class="detail-heading">Game Features</h2>
+                    <ul class="feature-list" id="gameFeatures"></ul>
+                </div>
+            </section>
             <div class="sidebar-ad-box">
                 <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
                     data-ad-slot="XXXXXXXXXX" data-ad-format="auto" data-full-width-responsive="true"></ins>
@@ -973,55 +1075,69 @@
                     (adsbygoogle = window.adsbygoogle || []).push({});
                 </script>
             </div>
+            <article class="info-card">
+                <h1 id="gameTitle"></h1>
+                <p class="description" id="gameDesc"></p>
+            </article>
+        </section>
 
-            <!-- More Games section at the bottom of the right sidebar - Fills the blank space below the right green box -->
-            <div class="more-games-section">
-                <h2 class="sidebar-title">More Games</h2>
-                <div class="more-games-grid" id="moreGamesGrid"></div>
+        <aside class="sidebar">
+            <div class="sidebar-ad-box">
+                <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+                    data-ad-slot="XXXXXXXXXX" data-ad-format="auto" data-full-width-responsive="true"></ins>
+                <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
             </div>
+            <div class="more-games">
+                <h3 class="more-games__title">More Games</h3>
+                <div class="more-games__list" id="moreGamesList"></div>
+            </div>
+            <div class="rec-grid" id="recommendationGrid"></div>
         </aside>
     </main>
     <footer>
-    <div class="footer-inner">
-        <div>
-            <div class="footer-logo-text">VORTE<span>XLY</span></div>
-            <p class="footer-desc">The best place to play free browser games. No downloads, no registration — just pure fun on any device.</p>
-            <div class="social-links">
-                <a href="#" class="social-link" aria-label="X"><i class="fab fa-x-twitter"></i></a>
-                <a href="#" class="social-link" aria-label="Discord"><i class="fab fa-discord"></i></a>
+        <div class="footer-inner">
+            <div>
+                <div class="footer-logo-text">VORTE<span>XLY</span></div>
+                <p class="footer-desc">The best place to play free browser games. No downloads, no registration — just
+                    pure fun on any device.</p>
+                <div class="social-links">
+                    <a href="#" class="social-link" aria-label="X"><i class="fab fa-x-twitter"></i></a>
+                    <a href="#" class="social-link" aria-label="Discord"><i class="fab fa-discord"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h5>Games</h5>
+                <ul>
+                    <li><a href="#" onclick="filterByCategory('action', event)">Action</a></li>
+                    <li><a href="#" onclick="filterByCategory('puzzle', event)">Puzzle</a></li>
+                    <li><a href="#" onclick="filterByCategory('strategy', event)">Strategy</a></li>
+                    <li><a href="#" onclick="filterByCategory('casual', event)">Casual</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h5>Company</h5>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h5>Legal</h5>
+                <ul>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="terms.html">Terms of Service</a></li>
+                    <li><a href="cookie.html">Cookie Policy</a></li>
+                    <li><a href="dmca.html">DMCA Notice</a></li>
+                </ul>
             </div>
         </div>
-        <div class="footer-col">
-            <h5>Games</h5>
-            <ul>
-                <li><a href="#" onclick="filterByCategory('action', event)">Action</a></li>
-                <li><a href="#" onclick="filterByCategory('puzzle', event)">Puzzle</a></li>
-                <li><a href="#" onclick="filterByCategory('strategy', event)">Strategy</a></li>
-                <li><a href="#" onclick="filterByCategory('casual', event)">Casual</a></li>
-            </ul>
+        <div class="footer-bottom">
+            <p>© 2026 vortex-ly. All rights reserved.</p>
+            <p>Made with ❤️ for gamers</p>
         </div>
-        <div class="footer-col">
-            <h5>Company</h5>
-            <ul>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </div>
-        <div class="footer-col">
-            <h5>Legal</h5>
-            <ul>
-                <li><a href="privacy.html">Privacy Policy</a></li>
-                <li><a href="terms.html">Terms of Service</a></li>
-                <li><a href="cookie.html">Cookie Policy</a></li>
-                <li><a href="dmca.html">DMCA Notice</a></li>
-            </div>
-        </div>
-    </div>
-    <div class="footer-bottom">
-        <p>© 2026 vortex-ly. All rights reserved.</p>
-        <p>Made with ❤️ for gamers</p>
-    </div>
-</footer>
+    </footer>
     <script src="/games.js"></script>
 
     <script>
@@ -1071,12 +1187,12 @@
             return arr;
         }
 
-        // Generate clean game slug (only keep name, no path prefix)
+        // Generate clean game slug (name only, no path prefix)
         function getCleanSlug(gameName) {
             return gameName.toLowerCase().replace(/_/g, '-');
         }
 
-        // Generate game jump link (auto adapt to local/online)
+        // Generate game redirect URL (auto-adapts to local/online environments)
         function getGameUrl(gameName) {
             var slug = getCleanSlug(gameName);
             var isLocal = window.location.hostname === '127.0.0.1'
@@ -1085,70 +1201,98 @@
             return isLocal ? `game.html?slug=${slug}` : `/games/${slug}/`;
         }
 
-        // Parse clean slug from URL (auto clean prefix, slashes)
+        // Parse clean slug from URL (auto-trim prefixes and slashes)
         function getGameSlug() {
-            // First try to parse from path (online pseudo-static)
+            // First try to parse from path (online pseudo-static routing)
             var pathParts = window.location.pathname.split('/').filter(Boolean);
             var gamesIndex = pathParts.indexOf('games');
             if (gamesIndex > -1 && pathParts[gamesIndex + 1]) {
                 return pathParts[gamesIndex + 1].toLowerCase();
             }
-            // Then parse from query parameters (local)
+            // Fall back to parsing from query parameters (local development)
             var params = new URLSearchParams(window.location.search);
             var slugParam = params.get('slug');
             if (slugParam) {
-                // Clean up possible /games/ prefix and leading/trailing slashes
+                // Trim potential /games/ prefix and leading/trailing slashes
                 return slugParam.replace(/^\/?games\//, '').replace(/\/$/, '').toLowerCase();
             }
             return '';
         }
 
-        // Render left trending game list
+        // Render left sidebar trending games list
         function renderLeftGames(currentKey) {
             var list = document.getElementById('leftGameList');
-            if (!list || typeof games === 'undefined') return;
+            // Validate that required data has finished loading
+            if (!list || typeof games === 'undefined' || typeof gameDetails === 'undefined') return;
 
+            // Filter out current game + shuffle remaining items
+            var filtered = games.filter(function (g) { return g[0] !== currentKey; });
+            var shuffled = shuffleArray(filtered);
+            var showList = shuffled.slice(0, 15);
+
+            var html = "";
+            showList.forEach(function (item) {
+                var gameKey = item[0];
+                var name = gameKey.replace(/_/g, ' ');
+                // Fetch game details from gameDetails, fallback to empty object if unavailable
+                var detail = gameDetails[gameKey] || {};
+                var desc = detail.desc || '';
+                var rating = detail.rating || '4.5';
+                var players = detail.players || '1.0k';
+
+                html += `
+                <a href="${getGameUrl(gameKey)}" class="left-game-item">
+                    <div class="left-game-cover">
+                        <img src="${item[4]}" alt="${name}" loading="lazy">
+                    </div>
+                    <div class="left-game-info">
+                        <span class="left-game-name">${name}</span>
+                        <p class="left-game-desc">${desc}</p>
+                    </div>
+                </a>
+                `;
+            });
+            list.innerHTML = html;
+        }
+
+        // Render right sidebar recommendations
+        function generateSidebar(currentKey) {
+            var list = document.getElementById('recommendationGrid');
+            // Validate that required data has finished loading
+            if (!list || typeof games === 'undefined' || typeof gameDetails === 'undefined') return;
+
+            // Filter out current game + shuffle remaining items
             var filtered = games.filter(function (g) { return g[0] !== currentKey; });
             var shuffled = shuffleArray(filtered);
             var showList = shuffled.slice(0, 10);
 
             var html = "";
             showList.forEach(function (item) {
-                var name = item[0].replace(/_/g, ' ');
+                var gameKey = item[0];
+                var name = gameKey.replace(/_/g, ' ');
+                // Fetch game details from gameDetails, fallback to empty object if unavailable
+                var detail = gameDetails[gameKey] || {};
+                var desc = detail.desc || '';
+                var rating = detail.rating || '4.5';
+                var players = detail.players || '1.0k';
+
                 html += `
-            <a href="${getGameUrl(item[0])}" class="left-game-item">
-                <img src="${item[4]}" alt="${name}">
-                <span>${name}</span>
-            </a>
-        `;
+                <a href="${getGameUrl(gameKey)}" class="reft-game-item">
+                    <div>
+                        <img src="${item[4]}" alt="${name}" class="images" loading="lazy">
+                    </div>
+                </a>
+                `;
             });
             list.innerHTML = html;
         }
 
-        // Render right recommended games
-        function generateSidebar(currentKey) {
-            var grid = document.getElementById('recommendationGrid');
-            if (!grid || typeof games === 'undefined') return;
-
-            var filtered = games.filter(function (g) { return g[0] !== currentKey; });
-            var html = "";
-            filtered.slice(0, 6).forEach(function (item) {
-                var name = item[0].replace(/_/g, ' ');
-                html += `
-            <a href="${getGameUrl(item[0])}" class="rec-card">
-                <img src="${item[4]}" alt="${name}">
-                <div class="rec-name">${name}</div>
-            </a>
-        `;
-            });
-            grid.innerHTML = html;
-        }
-
-        // Render more games
+        // Render more games section
         function renderMoreGames(currentKey) {
             var grid = document.getElementById('moreGamesGrid');
             if (!grid || typeof games === 'undefined') return;
 
+            // Filter out current game
             var filtered = games.filter(function (g) { return g[0] !== currentKey; });
             var showList = filtered.slice(4, 8);
 
@@ -1156,11 +1300,11 @@
             showList.forEach(function (item) {
                 var name = item[0].replace(/_/g, ' ');
                 html += `
-            <a href="${getGameUrl(item[0])}" class="more-game-card">
-                <img src="${item[4]}" alt="${name}">
-                <div class="more-name">${name}</div>
-            </a>
-        `;
+                <a href="${getGameUrl(item[0])}" class="more-game-card">
+                    <img src="${item[4]}" alt="${name}">
+                    <div class="more-name">${name}</div>
+                </a>
+                `;
             });
             grid.innerHTML = html;
         }
@@ -1176,7 +1320,7 @@
             var slugFromUrl = getGameSlug();
             console.log("Final parsed game slug:", slugFromUrl);
 
-            // Match game
+            // Match game by slug
             var matchedKey = Object.keys(gameDetails).find(function (key) {
                 return key.toLowerCase().replace(/_/g, '-') === slugFromUrl;
             });
@@ -1185,7 +1329,7 @@
                 var details = gameDetails[matchedKey];
                 var gameName = matchedKey.replace(/_/g, ' ');
 
-                // Update page information
+                // Update page metadata and content
                 document.title = gameName + " - Play on Vortexly";
                 document.getElementById('gameTitle').textContent = gameName;
                 document.getElementById('gameDesc').textContent = details.desc;
@@ -1196,17 +1340,17 @@
                 var referrerUrl = encodeURIComponent(window.location.href);
                 iframe.src = "https://html5.gamedistribution.com/" + details.gameId + "/?gd_sdk_referrer_url=" + referrerUrl;
 
-                // Hide animation after loading
+                // Hide loading animation after iframe loads
                 iframe.onload = function () {
                     setTimeout(function () {
                         document.getElementById('gameLoader').classList.add('hidden');
                     }, 300);
                 };
 
-                // Update top game count
+                // Update top game count badge
                 document.getElementById('liveCountBadge').textContent = " Games";
 
-                // Render all sidebars
+                // Render all sidebar components
                 renderLeftGames(matchedKey);
                 generateSidebar(matchedKey);
                 renderMoreGames(matchedKey);
@@ -1216,94 +1360,150 @@
                 console.warn("Game not matched");
             }
         });
-    
 
-// 路径匹配 + 调试打印
-function getCurrentGameData() {
-    var params = new URLSearchParams(window.location.search);
-    var slugParam = params.get('slug');
-    var currentPath = window.location.pathname;
-    var targetName = '';
+        // Path matching + debug logging
+        function getCurrentGameData() {
+            var params = new URLSearchParams(window.location.search);
+            var slugParam = params.get('slug');
+            var currentPath = window.location.pathname;
+            var targetName = '';
 
-    // 1. 从参数获取
-    if (slugParam) {
-        targetName = slugParam.toLowerCase().replace(/-/g, '_');
-        console.log("🔍 参数模式，标准化游戏名：", targetName);
-    } 
-    // 2. 从路径获取
-    else {
-        var pathSlug = currentPath.replace(/\/$/, '').split('/').pop();
-        targetName = pathSlug.toLowerCase().replace(/-/g, '_');
-        console.log("🔍 路径模式，标准化游戏名：", targetName);
-    }
+            // 1. Parse from query parameters
+            if (slugParam) {
+                targetName = slugParam.toLowerCase().replace(/-/g, '_');
+                console.log("🔍 Parameter mode: Normalized game name:", targetName);
+            }
+            // 2. Parse from URL path
+            else {
+                var pathSlug = currentPath.replace(/\/$/, '').split('/').pop();
+                targetName = pathSlug.toLowerCase().replace(/-/g, '_');
+                console.log("🔍 Path mode: Normalized game name:", targetName);
+            }
 
-    // 不区分大小写遍历匹配
-    for (var i = 0; i < games.length; i++) {
-        var gameKey = games[i][0].toLowerCase();
-        if (gameKey === targetName) {
-            console.log("✅ 匹配成功：", games[i][0]);
-            return {
-                name: games[i][0],
-                category: games[i][6].split(' ')[0],
-                thumbnail: games[i][4],
-                detail: gameDetails[games[i][0]]
-            };
+            // Case-insensitive iteration for matching
+            for (var i = 0; i < games.length; i++) {
+                var gameKey = games[i][0].toLowerCase();
+                if (gameKey === targetName) {
+                    console.log("✅ Match successful:", games[i][0]);
+                    return {
+                        name: games[i][0],
+                        category: games[i][6].split(' ')[0],
+                        thumbnail: games[i][4],
+                        detail: gameDetails[games[i][0]]
+                    };
+                }
+            }
+
+            console.log("❌ No matching game data found");
+            return null;
         }
-    }
 
-    console.log("❌ 未匹配到任何游戏数据");
-    return null;
-}
+        // Render all game detail sections
+        function renderAllGameDetail() {
+            var gameData = getCurrentGameData();
 
-function renderAllGameDetail() {
-    var gameData = getCurrentGameData();
+            if (!gameData || !gameData.detail) {
+                document.getElementById('gameOverview').textContent = "Game details not available.";
+                return;
+            }
 
-    if (!gameData || !gameData.detail) {
-        document.getElementById('gameOverview').textContent = "Game details not available.";
-        return;
-    }
+            var detail = gameData.detail;
+            var cleanName = gameData.name.replace(/_/g, ' ');
 
-    var detail = gameData.detail;
-    var cleanName = gameData.name.replace(/_/g, ' ');
+            document.getElementById('gameTitle').textContent = cleanName;
+            document.getElementById('gameRating').textContent = detail.rating;
+            // document.getElementById('gamePlayers').textContent = detail.players;
 
-    document.getElementById('gameTitle').textContent = cleanName;
-    document.getElementById('gameRating').textContent = detail.rating;
-    // document.getElementById('gamePlayers').textContent = detail.players;
+            document.getElementById('gameOverview').textContent = detail.overview || detail.desc;
 
-    document.getElementById('gameOverview').textContent = detail.overview || detail.desc;
+            if (detail.howToPlay) {
+                document.getElementById('gameHowToPlay').textContent = detail.howToPlay;
+            }
 
-    if (detail.howToPlay) {
-        document.getElementById('gameHowToPlay').textContent = detail.howToPlay;
-    }
+            if (detail.features && detail.features.length) {
+                var featuresHtml = '';
+                for (var i = 0; i < detail.features.length; i++) {
+                    featuresHtml += '<li>' + detail.features[i] + '</li>';
+                }
+                document.getElementById('gameFeatures').innerHTML = featuresHtml;
+            }
 
-    if (detail.features && detail.features.length) {
-        var featuresHtml = '';
-        for (var i = 0; i < detail.features.length; i++) {
-            featuresHtml += '<li>' + detail.features[i] + '</li>';
+            if (detail.tags && detail.tags.length) {
+                var tagsHtml = '';
+                for (var i = 0; i < detail.tags.length; i++) {
+                    var tag = detail.tags[i];
+                    var tagSlug = tag.toLowerCase().replace(/ /g, '-');
+                    tagsHtml += '<a href="/tags/' + tagSlug + '/" class="tag-pill" rel="tag">' + tag + '</a>';
+                }
+                document.getElementById('gameTags').innerHTML = tagsHtml;
+            }
+
+            document.title = cleanName + ' - Play Free Online | vortex-ly';
+            var metaDesc = document.querySelector('meta[name="description"]');
+            if (metaDesc) metaDesc.setAttribute('content', detail.desc);
         }
-        document.getElementById('gameFeatures').innerHTML = featuresHtml;
-    }
 
-    if (detail.tags && detail.tags.length) {
-        var tagsHtml = '';
-        for (var i = 0; i < detail.tags.length; i++) {
-            var tag = detail.tags[i];
-            var tagSlug = tag.toLowerCase().replace(/ /g, '-');
-            tagsHtml += '<a href="/tags/' + tagSlug + '/" class="tag-pill" rel="tag">' + tag + '</a>';
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', renderAllGameDetail);
+        } else {
+            renderAllGameDetail();
         }
-        document.getElementById('gameTags').innerHTML = tagsHtml;
-    }
 
-    document.title = cleanName + ' - Play Free Online | vortex-ly';
-    var metaDesc = document.querySelector('meta[name="description"]');
-    if (metaDesc) metaDesc.setAttribute('content', detail.desc);
-}
+        // Number of randomly recommended games
+        const RECOMMEND_COUNT = 4;
 
-if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', renderAllGameDetail);
-} else {
-    renderAllGameDetail();
-}
+        // Get current game identifier (extract slug from URL, auto-exclude current game)
+        function getCurrentGameKey() {
+            const params = new URLSearchParams(window.location.search);
+            const slug = params.get('slug') || window.location.pathname.split('/games/')[1]?.replace('/', '');
+            if (!slug) return '';
+            // Convert path to underscore format to match gameDetails keys
+            return slug.replace(/-/g, '_').replace(/\b\w/g, c => c.toUpperCase());
+        }
+
+        // Array shuffling (Fisher-Yates algorithm)
+        function shuffleArray(array) {
+            const arr = [...array];
+            for (let i = arr.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [arr[i], arr[j]] = [arr[j], arr[i]];
+            }
+            return arr;
+        }
+
+        // Render randomized game list
+        function renderRandomGames() {
+            const listEl = document.getElementById('moreGamesList');
+            const currentKey = getCurrentGameKey();
+
+            const filteredGames = games.filter(game => game[0] !== currentKey);
+            const randomGames = shuffleArray(filteredGames).slice(0, RECOMMEND_COUNT);
+
+            let html = '';
+            randomGames.forEach(game => {
+                const gameKey = game[0];
+                const gamePath = game[1];
+                const coverUrl = game[4];
+                const gameName = gameKey.replace(/_/g, ' ');
+                const desc = gameDetails[gameKey]?.desc || 'Free online browser game, play instantly.';
+
+                html += `
+                <a href="${gamePath}" class="more-game-card">
+                    <div class="more-game-card__cover">
+                        <img src="${coverUrl}" alt="${gameName}" loading="lazy">
+                    </div>
+                    <div class="more-game-card__info">
+                        <h4 class="more-game-card__name">${gameName}</h4>
+                        <p class="more-game-card__desc">${desc}</p>
+                    </div>
+                </a>
+                `;
+            });
+
+            listEl.innerHTML = html;
+        }
+
+        renderRandomGames();
     </script>
 </body>
 

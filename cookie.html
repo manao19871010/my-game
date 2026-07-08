@@ -1,48 +1,343 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cookie Policy — Vortexly</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500;600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500;600&family=JetBrains+Mono:wght@400;600&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
     <style>
-        :root {
-            --bg:        #0a0a0f;
-            --surface:   #12121a;
-            --card:      #1a1a26;
-            --border:    #2a2a3e;
-            --neon:      #00f5a0;
-            --neon2:     #00d9f5;
-            --text:      #e8e8f0;
-            --muted:     #7070a0;
+      :root {
+            --bg: #0a0a0f;
+            --surface: #12121a;
+            --card: #1a1a26;
+            --border: #2a2a3e;
+            --neon: #00f5a0;
+            --neon2: #00d9f5;
+            --text: #e8e8f0;
+            --muted: #7070a0;
             --font-head: 'Bebas Neue', sans-serif;
             --font-body: 'DM Sans', sans-serif;
             --font-mono: 'JetBrains Mono', monospace;
         }
-        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-        body { background: var(--bg); color: var(--text); font-family: var(--font-body); min-height: 100vh; overflow-x: hidden; line-height: 1.7; }
-        body::before { content: ''; position: fixed; inset: 0; background-image: linear-gradient(var(--border) 1px, transparent 1px), linear-gradient(90deg, var(--border) 1px, transparent 1px); background-size: 40px 40px; opacity: 0.25; pointer-events: none; z-index: 0; }
-        .legal-wrapper { max-width: 900px; margin: 60px auto; padding: 0 2rem; position: relative; z-index: 1; }
-        .back-home { display: inline-flex; align-items: center; gap: 8px; color: var(--muted); text-decoration: none; font-family: var(--font-mono); font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.05em; padding: 8px 16px; border: 1px solid var(--border); border-radius: 8px; background: var(--surface); transition: all 0.2s; margin-bottom: 40px; }
-        .back-home:hover { color: var(--neon); border-color: var(--neon); box-shadow: 0 0 15px rgba(0,245,160,0.15); }
-        .legal-card { background: var(--card); border: 1px solid var(--border); border-radius: 16px; padding: 48px; box-shadow: 0 20px 40px rgba(0,0,0,0.4); }
-        h1 { font-family: var(--font-head); font-size: 3.5rem; letter-spacing: 2px; line-height: 1; margin-bottom: 12px; background: linear-gradient(90deg, var(--neon), var(--neon2)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
-        .meta-info { font-family: var(--font-mono); font-size: 0.8rem; color: var(--muted); margin-bottom: 32px; display: flex; gap: 20px; border-bottom: 1px solid var(--border); padding-bottom: 16px; }
-        .meta-info span em { color: var(--neon); font-style: normal; }
-        h2 { font-family: var(--font-head); font-size: 1.8rem; letter-spacing: 1px; color: var(--text); margin: 32px 0 16px; display: flex; align-items: center; gap: 10px; }
-        h2::before { content: '//'; color: var(--neon); font-family: var(--font-mono); font-size: 1rem; }
-        p { color: rgba(232, 232, 240, 0.85); margin-bottom: 16px; font-size: 0.95rem; }
-        table { width: 100%; border-collapse: collapse; margin: 24px 0; background: var(--surface); border: 1px solid var(--border); border-radius: 8px; overflow: hidden; }
-        th, td { padding: 12px 16px; text-align: left; font-size: 0.9rem; border-bottom: 1px solid var(--border); }
-        th { background: rgba(0,245,160,0.05); color: var(--neon); font-family: var(--font-mono); font-size: 0.8rem; text-transform: uppercase; }
-        td strong { color: var(--neon2); }
-        a.legal-link { color: var(--neon); text-decoration: none; }
-        @media (max-width: 768px) { .legal-wrapper { margin: 30px auto; } .legal-card { padding: 24px; } h1 { font-size: 2.5rem; } table, thead, tbody, th, td, tr { display: block; } th { text-align: right; } td { text-align: right; border-bottom: 1px dashed var(--border); padding-left: 50%; position: relative; } td::before { content: attr(data-label); position: absolute; left: 16px; font-weight: bold; color: var(--muted); } }
+
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background: var(--bg);
+            color: var(--text);
+            font-family: var(--font-body);
+            min-height: 100vh;
+            overflow-x: hidden;
+            line-height: 1.7;
+        }
+
+        body::before {
+            content: '';
+            position: fixed;
+            inset: 0;
+            background-image: linear-gradient(var(--border) 1px, transparent 1px), linear-gradient(90deg, var(--border) 1px, transparent 1px);
+            background-size: 40px 40px;
+            opacity: 0.25;
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .legal-wrapper {
+            max-width: 900px;
+            margin: 60px auto;
+            padding: 0 2rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        .back-home {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--muted);
+            text-decoration: none;
+            font-family: var(--font-mono);
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            padding: 8px 16px;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            background: var(--surface);
+            transition: all 0.2s;
+            margin-bottom: 40px;
+        }
+
+        .back-home:hover {
+            color: var(--neon);
+            border-color: var(--neon);
+            box-shadow: 0 0 15px rgba(0, 245, 160, 0.15);
+        }
+
+        .legal-card {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 48px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+        }
+
+        h1 {
+            font-family: var(--font-head);
+            font-size: 3.5rem;
+            letter-spacing: 2px;
+            line-height: 1;
+            margin-bottom: 12px;
+            background: linear-gradient(90deg, var(--neon), var(--neon2));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .meta-info {
+            font-family: var(--font-mono);
+            font-size: 0.8rem;
+            color: var(--muted);
+            margin-bottom: 32px;
+            display: flex;
+            gap: 20px;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 16px;
+        }
+
+        .meta-info span em {
+            color: var(--neon);
+            font-style: normal;
+        }
+
+        h2 {
+            font-family: var(--font-head);
+            font-size: 1.8rem;
+            letter-spacing: 1px;
+            color: var(--text);
+            margin: 32px 0 16px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        h2::before {
+            content: '//';
+            color: var(--neon);
+            font-family: var(--font-mono);
+            font-size: 1rem;
+        }
+
+        p {
+            color: rgba(232, 232, 240, 0.85);
+            margin-bottom: 16px;
+            font-size: 0.95rem;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 24px 0;
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        th,
+        td {
+            padding: 12px 16px;
+            text-align: left;
+            font-size: 0.9rem;
+            border-bottom: 1px solid var(--border);
+        }
+
+        th {
+            background: rgba(0, 245, 160, 0.05);
+            color: var(--neon);
+            font-family: var(--font-mono);
+            font-size: 0.8rem;
+            text-transform: uppercase;
+        }
+
+        td strong {
+            color: var(--neon2);
+        }
+
+        a.legal-link {
+            color: var(--neon);
+            text-decoration: none;
+        }
+
+        @media (max-width: 768px) {
+            .legal-wrapper {
+                margin: 30px auto;
+            }
+
+            .legal-card {
+                padding: 24px;
+            }
+
+            h1 {
+                font-size: 2.5rem;
+            }
+
+            table,
+            thead,
+            tbody,
+            th,
+            td,
+            tr {
+                display: block;
+            }
+
+            th {
+                text-align: right;
+            }
+
+            td {
+                text-align: right;
+                border-bottom: 1px dashed var(--border);
+                padding-left: 50%;
+                position: relative;
+            }
+
+            td::before {
+                content: attr(data-label);
+                position: absolute;
+                left: 16px;
+                font-weight: bold;
+                color: var(--muted);
+            }
+        }
+
+          footer {
+            position: relative;
+            z-index: 1;
+            background: var(--surface);
+            border-top: 1px solid var(--border);
+            padding: 56px 2rem 32px;
+        }
+
+        .footer-inner {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 48px;
+        }
+
+        .footer-logo-text {
+            font-family: var(--font-head);
+            font-size: 1.6rem;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+        }
+
+        .footer-logo-text span {
+            color: var(--neon);
+        }
+
+        .footer-desc {
+            color: var(--muted);
+            font-size: 0.85rem;
+            line-height: 1.7;
+            margin-bottom: 20px;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 10px;
+        }
+
+        .social-link {
+            width: 36px;
+            height: 36px;
+            border-radius: 8px;
+            border: 1px solid var(--border);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--muted);
+            text-decoration: none;
+            transition: all var(--transition);
+        }
+
+        .social-link:hover {
+            border-color: var(--neon);
+            color: var(--neon);
+        }
+
+        .footer-col h5 {
+            font-weight: 600;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            margin-bottom: 16px;
+        }
+
+        .footer-col ul {
+            list-style: none;
+        }
+
+        .footer-col ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-col ul li a {
+            color: var(--muted);
+            text-decoration: none;
+            font-size: 0.85rem;
+        }
+
+        .footer-col ul li a:hover {
+            color: var(--neon);
+        }
+
+        .footer-bottom {
+            max-width: 1400px;
+            margin: 40px auto 0;
+            padding-top: 24px;
+            border-top: 1px solid var(--border);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .footer-bottom p {
+            font-size: 0.78rem;
+            color: var(--muted);
+            font-family: var(--font-mono);
+        }
+
+        @media (max-width: 900px) {
+            .footer-inner {
+                grid-template-columns: 1fr 1fr;
+                gap: 32px;
+            }
+        }
+
+        @media (max-width: 520px) {
+            .footer-inner {
+                grid-template-columns: 1fr;
+            }
+        }
     </style>
 </head>
+
 <body>
 
     <div class="legal-wrapper">
@@ -55,10 +350,14 @@
                 <span>Date: <em>May 28, 2026</em></span>
             </div>
 
-            <p>This Cookie Policy explains how Vortexly uses cookies and similar tracking protocols to recognize you when you visit our gaming hub. It clarifies the mechanics of these systems and highlights your autonomy over user configuration adjustments.</p>
+            <p>This Cookie Policy explains how Vortexly uses cookies and similar tracking protocols to recognize you
+                when you visit our gaming hub. It clarifies the mechanics of these systems and highlights your autonomy
+                over user configuration adjustments.</p>
 
             <h2>1. What Are Cookie Systems?</h2>
-            <p>Cookies are small text documents deployed directly to your storage disk by secure internet routing handlers. Web platform architects leverage cookies to trigger active system recall functions, accelerate core loading protocols, and establish customized behavioral interfaces.</p>
+            <p>Cookies are small text documents deployed directly to your storage disk by secure internet routing
+                handlers. Web platform architects leverage cookies to trigger active system recall functions, accelerate
+                core loading protocols, and establish customized behavioral interfaces.</p>
 
             <h2>2. Specific Cookie Matrix on Vortexly</h2>
             <p>We apply several classifications of data structures to maintain stable, monetized cloud operations:</p>
@@ -74,7 +373,8 @@
                 <tbody>
                     <tr>
                         <td data-label="Classification"><strong>Essential Cache</strong></td>
-                        <td data-label="Purpose">Maintains site stability, filter states, and active session allocation.</td>
+                        <td data-label="Purpose">Maintains site stability, filter states, and active session allocation.
+                        </td>
                         <td data-label="Origin Operators">Vortexly Core</td>
                     </tr>
                     <tr>
@@ -84,20 +384,67 @@
                     </tr>
                     <tr>
                         <td data-label="Classification"><strong>Game Analytics</strong></td>
-                        <td data-label="Purpose">Validates active play data, cross-site synchronization, and secure code performance.</td>
+                        <td data-label="Purpose">Validates active play data, cross-site synchronization, and secure code
+                            performance.</td>
                         <td data-label="Origin Operators">GameDistribution Platform</td>
                     </tr>
                 </tbody>
             </table>
 
             <h2>3. Deactivating and Modifying Cookie Allocations</h2>
-            <p>You possess absolute structural authority over whether your terminal accepts active tracking scripts. Most web client interfaces (Chrome, Firefox, Safari) enable comprehensive security overrides inside their native configuration settings. Furthermore, EU and California network signals respect standard consent choices for ad tailoring.</p>
+            <p>You possess absolute structural authority over whether your terminal accepts active tracking scripts.
+                Most web client interfaces (Chrome, Firefox, Safari) enable comprehensive security overrides inside
+                their native configuration settings. Furthermore, EU and California network signals respect standard
+                consent choices for ad tailoring.</p>
 
             <h2>4. Questions and Feedback Nodes</h2>
-            <p>For explicit auditing regarding individual browser logs or system tracking configurations, connect to our registry channel:</p>
+            <p>For explicit auditing regarding individual browser logs or system tracking configurations, connect to our
+                registry channel:</p>
             <p>Email: <a href="mailto:manao19871010@gmail.com" class="legal-link">manao19871010@gmail.com</a></p>
         </div>
     </div>
-
+    <footer>
+        <div class="footer-inner">
+            <div>
+                <div class="footer-logo-text">VORTEX<span>-LY</span></div>
+                <p class="footer-desc">The best place to play free browser games. No downloads, no registration — just
+                    pure fun on any device.</p>
+                <div class="social-links">
+                    <a href="#" class="social-link" aria-label="X"><i class="fab fa-x-twitter"></i></a>
+                    <a href="#" class="social-link" aria-label="Discord"><i class="fab fa-discord"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h5>Games</h5>
+                <ul>
+                    <li><a href="#" onclick="filterByCategory('action', event)">Action</a></li>
+                    <li><a href="#" onclick="filterByCategory('puzzle', event)">Puzzle</a></li>
+                    <li><a href="#" onclick="filterByCategory('strategy', event)">Strategy</a></li>
+                    <li><a href="#" onclick="filterByCategory('casual', event)">Casual</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h5>Company</h5>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h5>Legal</h5>
+                <ul>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="terms.html">Terms of Service</a></li>
+                    <li><a href="cookie.html">Cookie Policy</a></li>
+                    <li><a href="dmca.html">DMCA Notice</a></li>
+            </div>
+        </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 vortex-ly. All rights reserved.</p>
+            <p>Made with ❤️ for gamers</p>
+        </div>
+    </footer>
 </body>
+
 </html>
