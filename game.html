@@ -1042,7 +1042,8 @@
                     <p class="loader-text">LOADING GAME...</p>
                 </div>
                 <iframe id="gameIframe" allowfullscreen="true" allow="fullscreen; autoplay; gamepad; pointer-lock"
-                    sandbox="allow-scripts allow-same-origin allow-fullscreen allow-pointer-lock allow-top-navigation-by-user-activation !allow-popups !allow-top-navigation">
+                    sandbox="allow-scripts allow-same-origin allow-fullscreen allow-pointer-lock allow-forms allow-popups allow-top-navigation-by-user-activation"
+                    referrerpolicy="strict-origin-when-cross-origin">
                 </iframe>
             </div>
 
@@ -1157,7 +1158,7 @@
 
         const gameIframe = document.getElementById("gameIframe");
 
-        // Block auto redirect messages from GD internal scripts
+        // Block automatic redirects triggered by GD internal scripts
         window.addEventListener("message", function (ev) {
             const data = String(ev.data || "");
             if (data.includes("gamedistribution.com")
@@ -1170,14 +1171,15 @@
             }
         }, true);
 
-        // Block new tab popups only
+        // Disable window.open popups after iframe loads
         gameIframe.onload = function () {
             try {
                 const win = gameIframe.contentWindow;
                 win.open = function () { return null; };
-            } catch (e) { }
+            } catch (e) {
+                // Ignore cross-origin security exceptions
+            }
         };
-
 
 
 
