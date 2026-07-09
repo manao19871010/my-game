@@ -1377,8 +1377,8 @@
                 // Load game iframe
                 var iframe = document.getElementById('gameIframe');
                 var referrerUrl = encodeURIComponent(window.location.href);
-                iframe.src = "https://html5.gamedistribution.com/" + details.gameId + "/?gd_sdk_referrer_url=" + referrerUrl;
-
+                // iframe.src = "https://html5.gamedistribution.com/" + details.gameId + "/?gd_sdk_referrer_url=" + referrerUrl;
+                iframe.src = "https://html5.gamedistribution.com/" + details.gameId + "/index.html?gd_sdk_referrer_url=" + referrerUrl;
                 // Hide loading animation after iframe loads
                 iframe.onload = function () {
                     setTimeout(function () {
