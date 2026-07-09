@@ -361,12 +361,17 @@
 
         .left-game-item {
             display: flex;
-            flex-direction: column; /* Key: Switch to vertical layout */
-            align-items: flex-start; /* Align text to the left */
-            gap: 8px; /* Spacing between image and text */
+            flex-direction: column;
+            /* Key: Switch to vertical layout */
+            align-items: flex-start;
+            /* Align text to the left */
+            gap: 8px;
+            /* Spacing between image and text */
             padding: 12px;
-            min-height: auto; /* Remove minimum height constraint */
-            height: auto; /* Remove fixed height */
+            min-height: auto;
+            /* Remove minimum height constraint */
+            height: auto;
+            /* Remove fixed height */
             border-radius: 6px;
             background: var(--card-bg);
             border: 1px solid var(--border-color);
@@ -376,18 +381,21 @@
             color: var(--text-pure);
             box-sizing: border-box;
             margin-bottom: 8px;
-            overflow: visible; /* Allow content to overflow */
+            overflow: visible;
+            /* Allow content to overflow */
         }
 
         .left-game-item:hover {
             border-color: var(--accent);
-            transform: translateY(-2px); /* Optional: Slight upward shift for better interaction feedback */
+            transform: translateY(-2px);
+            /* Optional: Slight upward shift for better interaction feedback */
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
         }
 
         .left-game-item img {
             width: 120px;
-            height: 60px; /* Fixed image height, automatic width scaling */
+            height: 60px;
+            /* Fixed image height, automatic width scaling */
             object-fit: cover;
             border-radius: 6px;
             flex-shrink: 0;
@@ -414,7 +422,8 @@
             line-height: 1.4;
             color: var(--text-secondary);
             display: -webkit-box;
-            -webkit-line-clamp: 3; /* Show up to 3 lines, truncate overflow */
+            -webkit-line-clamp: 3;
+            /* Show up to 3 lines, truncate overflow */
             -webkit-box-orient: vertical;
             overflow: hidden;
             text-overflow: ellipsis;
@@ -459,7 +468,8 @@
             overflow: hidden;
             text-overflow: ellipsis;
             display: -webkit-box;
-            -webkit-line-clamp: 2; /* Show up to 2 lines, truncate overflow */
+            -webkit-line-clamp: 2;
+            /* Show up to 2 lines, truncate overflow */
             -webkit-box-orient: vertical;
         }
 
@@ -976,7 +986,8 @@
             margin: 0;
             line-height: 1.4;
             display: -webkit-box;
-            -webkit-line-clamp: 8; /* Show up to 8 lines, truncate overflow */
+            -webkit-line-clamp: 8;
+            /* Show up to 8 lines, truncate overflow */
             -webkit-box-orient: vertical;
             overflow: hidden;
         }
@@ -1031,7 +1042,8 @@
                     <p class="loader-text">LOADING GAME...</p>
                 </div>
                 <iframe id="gameIframe" allowfullscreen="true" allow="fullscreen; autoplay; gamepad; pointer-lock"
-                    sandbox="allow-scripts allow-same-origin allow-fullscreen allow-pointer-lock allow-popups">
+                    sandbox="allow-scripts allow-same-origin allow-fullscreen allow-pointer-lock 
+             !allow-popups !allow-top-navigation !allow-top-navigation-by-user-activation">
                 </iframe>
             </div>
 
@@ -1143,6 +1155,47 @@
     <script>
         var basePaddingTop = 56.25; // Default 16:9 ratio
         var currentSizeOffset = 0;
+
+        const gameIframe = document.getElementById("gameIframe");
+
+        // Block all redirect messages sent from inside the iframe (GD dedicated redirect detection)
+        window.addEventListener("message", function (ev) {
+            const data = String(ev.data || "");
+            // Match GD redirect keywords: domain, play redirect, top location
+            if (data.includes("gamedistribution.com")
+                || data.includes("window.top.location")
+                || data.includes("redirect")) {
+                ev.stopPropagation();
+                ev.preventDefault();
+                console.log("Block GD redirect message");
+                return false;
+            }
+        }, true);
+
+        // Block all a tag & location redirects within the iframe page (catch beforeunload event)
+        gameIframe.addEventListener("beforeunload", function (ev) {
+            ev.preventDefault();
+            ev.returnValue = "";
+            return false;
+        });
+
+        // Rewrite window.open after iframe finishes loading (cross-origin fallback)
+        gameIframe.onload = function () {
+            try {
+                const win = gameIframe.contentWindow;
+                // Disable new window popups
+                win.open = function () { return null; };
+                // Disable modification of top window address
+                Object.defineProperty(win, "top", {
+                    get: () => win
+                });
+            } catch (e) {
+                // Catch cross-origin security errors without logs
+            }
+        };
+
+
+
 
         function resizeGame(step) {
             currentSizeOffset = Math.max(-15, Math.min(20, currentSizeOffset + step));
