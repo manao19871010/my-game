@@ -69,7 +69,14 @@ var games = [
     ["Easter_Mahjong_Deluxe", "/games/easter-mahjong-deluxe/", "", "", "https://img.gamedistribution.com/0056b0eab7c141aaaf8d7a5a76c02558-512x384.jpeg", "Desktop iPadOld iPadNew iPhone AndroidLow AndroidMid AndroidHigh", "Puzzle New Landscape", "2026-06-13", "89", "86", "83", "80", "0056b0eab7c141aaaf8d7a5a76c02558"],
     ["Steal_Brainrot_Eggs", "/games/steal-brainrot-eggs/", "", "", "https://img.gamedistribution.com/e07da43b39e443738d6a84a4a6255c32-512x384.jpg", "Desktop iPadOld iPadNew iPhone AndroidLow AndroidMid AndroidHigh", "Action New Landscape", "2026-06-13", "92", "89", "86", "83", "e07da43b39e443738d6a84a4a6255c32"],
     ["Tap_3D_Blocks", "/games/tap-3d-blocks/", "", "", "https://img.gamedistribution.com/2c50bfeecb6c4849b504cfe446bf844e-200x120.jpg", "Desktop iPadOld iPadNew iPhone AndroidLow AndroidMid AndroidHigh", "Puzzle New Landscape", "2026-06-13", "87", "84", "81", "78", "2c50bfeecb6c4849b504cfe446bf844e"],
-    ["My_Arcade_Center_2", "/games/my-arcade-center-2/", "", "", "https://img.gamedistribution.com/54aca2f7503041c0bd97e74d7e316a67-512x512.jpg", "Desktop iPadOld iPadNew iPhone AndroidLow AndroidMid AndroidHigh", "Strategy New Landscape", "2026-06-13", "90", "87", "84", "81", "54aca2f7503041c0bd97e74d7e316a67"]
+    ["My_Arcade_Center_2", "/games/my-arcade-center-2/", "", "", "https://img.gamedistribution.com/54aca2f7503041c0bd97e74d7e316a67-512x512.jpg", "Desktop iPadOld iPadNew iPhone AndroidLow AndroidMid AndroidHigh", "Strategy New Landscape", "2026-06-13", "90", "87", "84", "81", "54aca2f7503041c0bd97e74d7e316a67"],
+    
+    ["Car_Eats_Car_Underwater_Adventure", "/games/car-eats-car-underwater-adventure/", "", "", "https://img.gamedistribution.com/16de13074932401f9f65f4023e586ab4-512x384.jpeg", "Desktop iPadOld iPadNew iPhone AndroidLow AndroidMid AndroidHigh", "Racing New Landscape", "2026-06-13", "91", "88", "86", "83", "16de13074932401f9f65f4023e586ab4"],
+["Traffic_Racing", "/games/traffic-racing/", "", "", "https://img.gamedistribution.com/f3ee6674b4ea4579aeefd54d7bf388f0-512x384.jpg", "Desktop iPadOld iPadNew iPhone AndroidLow AndroidMid AndroidHigh", "Racing New Landscape", "2026-06-13", "89", "92", "90", "87", "f3ee6674b4ea4579aeefd54d7bf388f0"],
+["i8_City_Driver", "/games/i8-city-driver/", "", "", "https://img.gamedistribution.com/f6acd919192c441c9aca2d20a18e04c6-512x384.jpg", "Desktop iPadOld iPadNew iPhone AndroidLow AndroidMid AndroidHigh", "Racing New Landscape", "2026-06-13", "92", "90", "88", "91", "f6acd919192c441c9aca2d20a18e04c6"],
+["Epic_Stunts_PvP_3D", "/games/epic-stunts-pvp-3d/", "", "", "https://img.gamedistribution.com/a75b82d28b4b4083bbc8ad4394570d97-200x120.jpg", "Desktop iPadOld iPadNew iPhone AndroidLow AndroidHigh", "Racing Multi Landscape", "2026-06-13", "93", "91", "94", "90", "a75b82d28b4b4083bbc8ad4394570d97"],
+["Driverz_Ed", "/games/driverz-ed/", "", "", "https://img.gamedistribution.com/c18628dc38904a5c8da49c7ba330d93b-512x384.jpg", "Desktop iPadOld iPadNew iPhone AndroidLow AndroidMid AndroidHigh", "Racing OpenWorld Landscape", "2026-06-13", "90", "87", "85", "88", "c18628dc38904a5c8da49c7ba330d93b"],
+["SpelunKing", "/games/spelunking/", "", "", "https://img.gamedistribution.com/a3a4111db59d496b96de651c307009ad-1280x550.jpg", "Desktop iPadOld iPadNew iPhone AndroidLow AndroidMid AndroidHigh", "Match3 Puzzle Landscape", "2026-06-13", "94", "92", "90", "93", "a3a4111db59d496b96de651c307009ad"]
 
 
 ];
@@ -618,6 +625,67 @@ var gameDetails = {
     howToPlay: "Purchase arcade machines and place them around your hall to attract customers and earn coins. Reinvest your earnings to unlock new machines, upgrade facilities, and hire staff to improve efficiency. Complete daily missions for bonus rewards. Unlock new maps to open more arcade branches, and switch between them anytime to manage your empire. Keep optimizing your layout and upgrades to build the biggest arcade business.",
     features: ["7 unique arcade maps", "Dozens of unlockable arcade machines", "Staff hiring & layout optimization", "Multi-center management system", "Daily missions & permanent upgrades"],
     tags: ["Strategy", "Simulation", "Tycoon", "Management", "Casual"]
+},
+
+"Car_Eats_Car_Underwater_Adventure": {
+    gameId: "16de13074932401f9f65f4023e586ab4",
+    desc: "Play free online Car Eats Car Underwater Adventure racing game, fun monster car police chase driving simulator with turbo boost, underwater highway races, car upgrade & boss fight action for all ages.",
+    players: "2.4k",
+    rating: "4.6",
+    overview: "Dive into wild underwater racing combat filled with intense police pursuits and rival vehicle battles. Every race brings chaotic highway-style showdowns beneath the waves. Craft and customize your unique monster car with powerful turbo engines and combat upgrades. Your fellow racers are locked away, and it’s up to you to blast through opponents, evade patrolling police fleets, and defeat giant boss vehicles to break them free. Mix fast driving action with strategic vehicle building for endless chaotic racing fun for all players.",
+    howToPlay: "Use arrow keys to steer and activate turbo boosts for rapid acceleration. Overtake rival cars while dodging police patrols scattered across underwater tracks. Gather upgrade materials mid-race to strengthen your vehicle’s attack and speed stats. Clear every boss encounter to unlock brand-new monster car skins and high-performance engine parts.",
+    features: ["Submarine race environments", "Custom monster car crafting", "Intense police chase sequences", "Boss vehicle battles", "Turbo acceleration mechanics"],
+    tags: ["Racing", "Combat", "Underwater", "Car", "Action"]
+},
+"Traffic_Racing": {
+    gameId: "f3ee6674b4ea4579aeefd54d7bf388f0",
+    desc: "Free online Traffic Racing highway driving game, fast speed car race simulator, offline career mode & online multiplayer racing league with sports car unlocks.",
+    players: "2.1k",
+    rating: "4.5",
+    overview: "Feel the rush of high-speed highway driving in this adrenaline-fueled racing title. Navigate tight gaps between endless streams of moving traffic as you race against the clock. Test your driving skills across two distinct play modes: a solo career campaign packed with progressive challenges, and online racing leagues where you compete against real global players. Master sharp lane changes and precise speed control to climb leaderboards and unlock faster sports cars.",
+    howToPlay: "Control steering with left and right arrow buttons, hit up to accelerate smoothly. Slip between dense highway traffic to avoid collisions and maintain top speeds. Complete career race objectives to unlock premium sports cars, then join online leagues to race against competitors worldwide for high score rankings.",
+    features: ["Busy highway race maps", "Single-player career mode", "Global online racing leagues", "Wide sports car roster", "Realistic traffic physics"],
+    tags: ["Racing", "Highway", "Traffic", "Online", "Casual"]
+},
+"i8_City_Driver": {
+    gameId: "f6acd919192c441c9aca2d20a18e04c6",
+    desc: "Free i8 City Driver open world supercar game, city drift stunt simulator with nitro boost, pet dog companion & car upgrade driving missions.",
+    players: "2.7k",
+    rating: "4.7",
+    overview: "Roam a vast, vibrant open city behind the wheel of a sleek customizable supercar. This driving simulator blends smooth high-speed cruising with thrilling drift and stunt challenges scattered across every neighborhood. Modify your ride with speed, handling and nitro upgrades to dominate all city missions. Bring along your cute dog sidekick to unlock exclusive bonus rewards as you pull off tricky stunts and hit speed checkpoints all over town.",
+    howToPlay: "Steer with arrow keys, tap space to activate nitro bursts for instant speed surges. Wander freely across the full city map to locate stunt ramps and drift zones. Collect upgrade kits scattered around roads to boost your supercar’s stats, and bring your pet dog along to earn extra mission bonuses.",
+    features: ["Large open city map", "Supercar upgrade system", "Drift & stunt challenges", "Pet companion mechanic", "Nitro speed boost"],
+    tags: ["Racing", "OpenWorld", "Supercar", "Drift", "Stunt"]
+},
+"Epic_Stunts_PvP_3D": {
+    gameId: "a75b82d28b4b4083bbc8ad4394570d97",
+    desc: "Epic Stunts PvP 3D free online muscle car stunt game, two player split screen multiplayer racing, aerial trick & car custom simulator.",
+    players: "3.0k",
+    rating: "4.6",
+    overview: "Show off insane aerial stunts in powerful roaring muscle cars inside a dedicated stunt arena. Three unique game styles let you practice solo tricks or face off against a friend in split-screen PvP races. Tweak every part of your muscle vehicle, from paint colors to engine power, to craft a ride matching your racing style. Pull backflips, wheelies and combo stunts to rack up high stunt scores and outshine your opponent in competitive two-player contests.",
+    howToPlay: "Adjust your car’s balance mid-air to pull clean stunts off large ramps. Customize paintwork, tires and engine power before each race. Invite a friend for local split-screen PvP stunt matches, earn stunt points to unlock exclusive muscle car skins.",
+    features: ["Realistic muscle car physics", "Two-player PvP mode", "Massive stunt ramps", "Vehicle customization", "Stunt score ranking"],
+    tags: ["Racing", "Stunt", "PvP", "Multiplayer", "3D"]
+},
+"Driverz_Ed": {
+    gameId: "c18628dc38904a5c8da49c7ba330d93b",
+    desc: "Free Driverz Ed open world driving game, exploration car simulator with hidden puzzle collectibles, unlock all vehicles & fast travel system.",
+    players: "2.2k",
+    rating: "4.5",
+    overview: "Take a laid-back exploratory road trip across multiple unique open landscapes in this casual driving adventure. No harsh time limits or aggressive races here—instead, wander freely to hunt down hidden puzzle fragments scattered across every region. Complete delivery, sightseeing and exploration quests to unlock dozens of distinct vehicle models. Use fast travel points to jump between zones quickly and finish every side objective at your own comfortable pace.",
+    howToPlay: "Drive freely across multiple open maps, follow mission markers to collect hidden puzzle fragments. Complete delivery and exploration quests to unlock new vehicle models. Use fast travel points to quickly switch regions and finish all side challenges for extra rewards.",
+    features: ["Multi-region open world", "Puzzle collection missions", "Huge car unlock roster", "Fast travel system", "Mixed racing & strategy"],
+    tags: ["Racing", "OpenWorld", "Exploration", "Puzzle", "Simulation"]
+},
+"SpelunKing": {
+    gameId: "a3a4111db59d496b96de651c307009ad",
+    desc: "Free SpelunKing mine match 3 puzzle game, underground gem matching adventure, village building & mine level unlock casual browser game.",
+    players: "2.8k",
+    rating: "4.7",
+    overview: "Venture deep into twisting mine tunnels in this relaxing match-3 puzzle journey. Swap colorful gem tiles to clear underground layers and gather valuable stone treasures. Track down your grandfather’s forgotten lost artifacts while collecting enough resources to restore the rundown village above ground. Unlock deeper mine levels and construct new town facilities as you clear more matching combos and complete special mine event puzzles.",
+    howToPlay: "Swap adjacent gem tiles to form groups of three or more matching stones and clear mine layers. Collect rare mineral resources to renovate village buildings and unlock deeper mine tunnels. Complete special mine event stages to obtain powerful match boosters.",
+    features: ["Underground mine scene", "Town building upgrade", "Gem collection mechanics", "Deep progressive levels", "Match3 booster system"],
+    tags: ["Puzzle", "Match3", "Mine", "Casual", "Building"]
 }
 
     
