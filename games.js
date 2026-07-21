@@ -36,8 +36,8 @@ var games = [
     ["Math_Stars", "/games/math-stars/", "", "", "https://img.gamedistribution.com/e7e5bb0e6caf47b5965d813736921e76-512x384.jpg", "Desktop iPadOld iPadNew iPhone AndroidLow AndroidMid AndroidHigh", "Casual New Landscape", "2026-06-13", 87, 84, 81, 78, "e7e5bb0e6caf47b5965d813736921e76"],
     ["Worm_Puzzle_Snake_Apple", "/games/worm-puzzle-snake-apple/", "", "", "https://img.gamedistribution.com/7e5efdcdc8d84b2291c0febe8de5e638-512x384.jpg", "Desktop iPadOld iPadNew iPhone AndroidLow AndroidMid AndroidHigh", "Puzzle New Landscape", "2026-06-13", 89, 86, 83, 80, "7e5efdcdc8d84b2291c0febe8de5e638"],
     ["Sugar_Pop_Land", "/games/sugar-pop-land/", "", "", "https://img.gamedistribution.com/5bf8cb720bd147a4b62167eefdf38788-512x384.jpg", "Desktop iPadOld iPadNew iPhone AndroidLow AndroidMid AndroidHigh", "Casual New Landscape", "2026-06-13", 88, 85, 82, 79, "5bf8cb720bd147a4b62167eefdf38788"],
-    
-     ["Meme_Myth_Wukong", "/games/meme-myth-wukong/", "", "", "https://img.gamedistribution.com/e4af90c070cf499da371b44232a6aaca-512x384.jpg", "Desktop iPadOld iPadNew iPhone AndroidLow AndroidMid AndroidHigh", "Puzzle New Landscape", "2026-06-13", "90", "91", "93", "87", "e4af90c070cf499da371b44232a6aaca"],
+
+    ["Meme_Myth_Wukong", "/games/meme-myth-wukong/", "", "", "https://img.gamedistribution.com/e4af90c070cf499da371b44232a6aaca-512x384.jpg", "Desktop iPadOld iPadNew iPhone AndroidLow AndroidMid AndroidHigh", "Puzzle New Landscape", "2026-06-13", "90", "91", "93", "87", "e4af90c070cf499da371b44232a6aaca"],
     ["Hill_Climb_Pixel_Car", "/games/hill-climb-pixel-car/", "", "", "https://img.gamedistribution.com/6d493125b300434fad9be4cf8c858bbd-512x384.jpg", "Desktop iPadOld iPadNew iPhone AndroidLow AndroidMid AndroidHigh", "Action New Landscape", "2026-06-13", "93", "93", "88", "95", "6d493125b300434fad9be4cf8c858bbd"],
     ["Bubble_Game_3", "/games/bubble-game-3/", "", "", "https://img.gamedistribution.com/27673bc45d2e4b27b7cd24e422f7c257-512x384.jpg", "Desktop iPadOld iPadNew iPhone AndroidLow AndroidMid AndroidHigh", "Puzzle New Landscape", "2026-06-13", "88", "94", "94", "94", "27673bc45d2e4b27b7cd24e422f7c257"],
     ["Mahjong_Connect", "/games/mahjong-connect/", "", "", "https://img.gamedistribution.com/a7f5393b417346268657f3bd67eac24e-512x384.jpg", "Desktop iPadOld iPadNew iPhone AndroidLow AndroidMid AndroidHigh", "Puzzle New Landscape", "2026-06-13", "87", "87", "91", "90", "a7f5393b417346268657f3bd67eac24e"],
@@ -70,13 +70,21 @@ var games = [
     ["Steal_Brainrot_Eggs", "/games/steal-brainrot-eggs/", "", "", "https://img.gamedistribution.com/e07da43b39e443738d6a84a4a6255c32-512x384.jpg", "Desktop iPadOld iPadNew iPhone AndroidLow AndroidMid AndroidHigh", "Action New Landscape", "2026-06-13", "92", "89", "86", "83", "e07da43b39e443738d6a84a4a6255c32"],
     ["Tap_3D_Blocks", "/games/tap-3d-blocks/", "", "", "https://img.gamedistribution.com/2c50bfeecb6c4849b504cfe446bf844e-200x120.jpg", "Desktop iPadOld iPadNew iPhone AndroidLow AndroidMid AndroidHigh", "Puzzle New Landscape", "2026-06-13", "87", "84", "81", "78", "2c50bfeecb6c4849b504cfe446bf844e"],
     ["My_Arcade_Center_2", "/games/my-arcade-center-2/", "", "", "https://img.gamedistribution.com/54aca2f7503041c0bd97e74d7e316a67-512x512.jpg", "Desktop iPadOld iPadNew iPhone AndroidLow AndroidMid AndroidHigh", "Strategy New Landscape", "2026-06-13", "90", "87", "84", "81", "54aca2f7503041c0bd97e74d7e316a67"],
-    
+
     ["Car_Eats_Car_Underwater_Adventure", "/games/car-eats-car-underwater-adventure/", "", "", "https://img.gamedistribution.com/16de13074932401f9f65f4023e586ab4-512x384.jpeg", "Desktop iPadOld iPadNew iPhone AndroidLow AndroidMid AndroidHigh", "Racing New Landscape", "2026-06-13", "91", "88", "86", "83", "16de13074932401f9f65f4023e586ab4"],
-["Traffic_Racing", "/games/traffic-racing/", "", "", "https://img.gamedistribution.com/f3ee6674b4ea4579aeefd54d7bf388f0-512x384.jpg", "Desktop iPadOld iPadNew iPhone AndroidLow AndroidMid AndroidHigh", "Racing New Landscape", "2026-06-13", "89", "92", "90", "87", "f3ee6674b4ea4579aeefd54d7bf388f0"],
-["i8_City_Driver", "/games/i8-city-driver/", "", "", "https://img.gamedistribution.com/f6acd919192c441c9aca2d20a18e04c6-512x384.jpg", "Desktop iPadOld iPadNew iPhone AndroidLow AndroidMid AndroidHigh", "Racing New Landscape", "2026-06-13", "92", "90", "88", "91", "f6acd919192c441c9aca2d20a18e04c6"],
-["Epic_Stunts_PvP_3D", "/games/epic-stunts-pvp-3d/", "", "", "https://img.gamedistribution.com/a75b82d28b4b4083bbc8ad4394570d97-200x120.jpg", "Desktop iPadOld iPadNew iPhone AndroidLow AndroidHigh", "Racing Multi Landscape", "2026-06-13", "93", "91", "94", "90", "a75b82d28b4b4083bbc8ad4394570d97"],
-["Driverz_Ed", "/games/driverz-ed/", "", "", "https://img.gamedistribution.com/c18628dc38904a5c8da49c7ba330d93b-512x384.jpg", "Desktop iPadOld iPadNew iPhone AndroidLow AndroidMid AndroidHigh", "Racing OpenWorld Landscape", "2026-06-13", "90", "87", "85", "88", "c18628dc38904a5c8da49c7ba330d93b"],
-["SpelunKing", "/games/spelunking/", "", "", "https://img.gamedistribution.com/a3a4111db59d496b96de651c307009ad-1280x550.jpg", "Desktop iPadOld iPadNew iPhone AndroidLow AndroidMid AndroidHigh", "Match3 Puzzle Landscape", "2026-06-13", "94", "92", "90", "93", "a3a4111db59d496b96de651c307009ad"]
+    ["Traffic_Racing", "/games/traffic-racing/", "", "", "https://img.gamedistribution.com/f3ee6674b4ea4579aeefd54d7bf388f0-512x384.jpg", "Desktop iPadOld iPadNew iPhone AndroidLow AndroidMid AndroidHigh", "Racing New Landscape", "2026-06-13", "89", "92", "90", "87", "f3ee6674b4ea4579aeefd54d7bf388f0"],
+    ["i8_City_Driver", "/games/i8-city-driver/", "", "", "https://img.gamedistribution.com/f6acd919192c441c9aca2d20a18e04c6-512x384.jpg", "Desktop iPadOld iPadNew iPhone AndroidLow AndroidMid AndroidHigh", "Racing New Landscape", "2026-06-13", "92", "90", "88", "91", "f6acd919192c441c9aca2d20a18e04c6"],
+    ["Epic_Stunts_PvP_3D", "/games/epic-stunts-pvp-3d/", "", "", "https://img.gamedistribution.com/a75b82d28b4b4083bbc8ad4394570d97-200x120.jpg", "Desktop iPadOld iPadNew iPhone AndroidLow AndroidHigh", "Racing Multi Landscape", "2026-06-13", "93", "91", "94", "90", "a75b82d28b4b4083bbc8ad4394570d97"],
+    ["Driverz_Ed", "/games/driverz-ed/", "", "", "https://img.gamedistribution.com/c18628dc38904a5c8da49c7ba330d93b-512x384.jpg", "Desktop iPadOld iPadNew iPhone AndroidLow AndroidMid AndroidHigh", "Racing OpenWorld Landscape", "2026-06-13", "90", "87", "85", "88", "c18628dc38904a5c8da49c7ba330d93b"],
+    ["SpelunKing", "/games/spelunking/", "", "", "https://img.gamedistribution.com/a3a4111db59d496b96de651c307009ad-1280x550.jpg", "Desktop iPadOld iPadNew iPhone AndroidLow AndroidMid AndroidHigh", "Match3 Puzzle Landscape", "2026-06-13", "94", "92", "90", "93", "a3a4111db59d496b96de651c307009ad"],
+
+    ["Fierce_Shot", "/games/fierce-shot/", "", "", "https://img.gamedistribution.com/837eb6bd30a14d818e8fb33e80f8df7d-512x512.jpeg", "Desktop iPadOld iPadNew iPhone AndroidLow AndroidMid AndroidHigh", "Sports New Portrait", "2026-07-21", 92, 89, 85, 82, "837eb6bd30a14d818e8fb33e80f8df7d"],
+    ["Barbee_Summer_Vacation", "/games/barbee-summer-vacation/", "", "", "https://img.gamedistribution.com/37f8e78be66540648b0066d7f2826b6a-512x384.jpg", "Desktop iPadOld iPadNew iPhone AndroidLow AndroidMid AndroidHigh", "Girls New Landscape", "2026-07-21", 88, 85, 82, 79, "37f8e78be66540648b0066d7f2826b6a"],
+    ["Wake_Up_the_Box", "/games/wake-up-the-box/", "", "", "https://img.gamedistribution.com/88d7078602364cfd845f7c2796c456c7-512x384.jpeg", "Desktop iPadOld iPadNew iPhone AndroidLow AndroidMid AndroidHigh", "Puzzle New Landscape", "2026-07-21", 90, 87, 84, 80, "88d7078602364cfd845f7c2796c456c7"],
+    ["SpelunKing", "/games/spelunking/", "", "", "https://img.gamedistribution.com/a3a4111db59d496b96de651c307009ad-200x120.jpg", "Desktop iPadOld iPadNew iPhone AndroidLow AndroidMid AndroidHigh", "Match3 New Landscape", "2026-07-21", 86, 83, 80, 77, "a3a4111db59d496b96de651c307009ad"],
+    ["Mansion_Story_Match", "/games/mansion-story-match/", "", "", "https://img.gamedistribution.com/1011183f1ce348f0a3735476f5523302-200x120.jpg", "Desktop iPadOld iPadNew iPhone AndroidLow AndroidMid AndroidHigh", "Match3 New Landscape", "2026-07-21", 89, 86, 83, 80, "1011183f1ce348f0a3735476f5523302"],
+    ["Offroad_Crash_Climber_4X4", "/games/offroad-crash-climber-4x4/", "", "", "https://img.gamedistribution.com/e779cdcaf9ee4dfe97b8df28e282a3e1-512x512.jpg", "Desktop iPadOld iPadNew iPhone AndroidLow AndroidMid AndroidHigh", "Racing New Landscape", "2026-07-21", 91, 88, 85, 81, "e779cdcaf9ee4dfe97b8df28e282a3e1"]
+
 
 
 ];
@@ -94,7 +102,7 @@ var games = [
 // features   List of game highlights (displayed on detail page)
 // tags       Topic tags (for tag aggregation pages and SEO optimization)
 var gameDetails = {
-   "Tap_Arrow_Away": {
+    "Tap_Arrow_Away": {
         gameId: "07393e2820d1486ca209959528869a5f",
         desc: "An addictive tap-away puzzle game. Remove arrow blocks to solve puzzles and relax your mind.",
         players: "1.5k",
@@ -597,99 +605,162 @@ var gameDetails = {
         tags: ["Puzzle", "Mahjong", "Easter", "Holiday", "Timed"]
     },
     "Steal_Brainrot_Eggs": {
-    gameId: "e07da43b39e443738d6a84a4a6255c32",
-    desc: "A competitive action game for 1 or 2 players. Hatch brainrot characters, defend your base, and steal from rivals.",
-    players: "2.8k",
-    rating: "4.6",
-    overview: "Steal Brainrot Eggs is a chaotic competitive action game playable in both 1 Player and 2 Player modes. Players buy eggs from a central conveyor belt, carry them back to their base, and hatch random brainrot characters of varying rarity. Hatched characters generate coins over time, granting access to higher-tier eggs with more valuable rewards. You can defend your own base from thieves, or sneak into your rival's base to steal their eggs and characters. With character customization, evolving pets, and timed map events, it delivers endless competitive fun.",
-    howToPlay: "Move your character to the central conveyor to purchase eggs, then carry them back to your base to hatch. Collect coins generated by your characters to unlock rarer eggs and upgrades. In 2-player mode, sneak into your opponent's base to steal their eggs and characters, while defending your own base from raids. Complete timed events across the map to earn exclusive rewards and build the strongest brainrot collection.",
-    features: ["1 Player & 2 Player competitive modes", "Multiple egg rarities & character hatches", "Base defense & stealing mechanics", "Character customization & pet evolution", "Timed map events & rewards"],
-    tags: ["Action", "Competitive", "2 Player", "Casual", "Strategy"]
-},
-"Tap_3D_Blocks": {
-    gameId: "2c50bfeecb6c4849b504cfe446bf844e",
-    desc: "A layered 3D block puzzle. Flip, rotate and reveal tiles to clear the stacked board.",
-    players: "1.6k",
-    rating: "4.5",
-    overview: "Tap 3D Blocks presents layers upon layers of stacked dice blocks waiting for your skillful touch. Unlike flat puzzle games, this one dares you to see the whole picture from every angle. Flip, rotate and reveal new tiles as you uncover unexpected paths through the 3D stack. Boosters lend a hand when you get stuck, but the core strategy is all yours. With increasing difficulty and immersive 3D visuals, it tests your spatial awareness and delivers satisfying puzzle-solving fun.",
-    howToPlay: "Tap on visible tiles to remove them from the stack, unlocking layers underneath. Swipe to rotate the entire block pile and view it from different angles to find matchable tiles. Use boosters like hints and shuffle when you get stuck. Clear all blocks from the board to complete the level. Try to finish with as few moves as possible to earn a higher score.",
-    features: ["Immersive 3D stacked blocks", "Full rotation & angle control", "Dozens of challenging levels", "Helpful in-game boosters", "Spatial thinking puzzle gameplay"],
-    tags: ["Puzzle", "3D", "Block", "Single Player", "Brain Teaser"]
-},
-"My_Arcade_Center_2": {
-    gameId: "54aca2f7503041c0bd97e74d7e316a67",
-    desc: "A fast-paced arcade management tycoon game. Build, upgrade and expand your arcade empire.",
-    players: "2.4k",
-    rating: "4.7",
-    overview: "My Arcade Center 2 is a fast-paced arcade management tycoon game with deep business simulation mechanics. Build, customize, and expand your very own arcade across 7 unique maps. Earn revenue from customers during the day, then spend your earnings on upgrades at night: unlock new arcade machines, hire staff, and optimize your floor layout to maximize profits. Switch between centers anytime, unlock new characters and skins, complete daily missions, and grow your business with rewarding long-term progression.",
-    howToPlay: "Purchase arcade machines and place them around your hall to attract customers and earn coins. Reinvest your earnings to unlock new machines, upgrade facilities, and hire staff to improve efficiency. Complete daily missions for bonus rewards. Unlock new maps to open more arcade branches, and switch between them anytime to manage your empire. Keep optimizing your layout and upgrades to build the biggest arcade business.",
-    features: ["7 unique arcade maps", "Dozens of unlockable arcade machines", "Staff hiring & layout optimization", "Multi-center management system", "Daily missions & permanent upgrades"],
-    tags: ["Strategy", "Simulation", "Tycoon", "Management", "Casual"]
-},
+        gameId: "e07da43b39e443738d6a84a4a6255c32",
+        desc: "A competitive action game for 1 or 2 players. Hatch brainrot characters, defend your base, and steal from rivals.",
+        players: "2.8k",
+        rating: "4.6",
+        overview: "Steal Brainrot Eggs is a chaotic competitive action game playable in both 1 Player and 2 Player modes. Players buy eggs from a central conveyor belt, carry them back to their base, and hatch random brainrot characters of varying rarity. Hatched characters generate coins over time, granting access to higher-tier eggs with more valuable rewards. You can defend your own base from thieves, or sneak into your rival's base to steal their eggs and characters. With character customization, evolving pets, and timed map events, it delivers endless competitive fun.",
+        howToPlay: "Move your character to the central conveyor to purchase eggs, then carry them back to your base to hatch. Collect coins generated by your characters to unlock rarer eggs and upgrades. In 2-player mode, sneak into your opponent's base to steal their eggs and characters, while defending your own base from raids. Complete timed events across the map to earn exclusive rewards and build the strongest brainrot collection.",
+        features: ["1 Player & 2 Player competitive modes", "Multiple egg rarities & character hatches", "Base defense & stealing mechanics", "Character customization & pet evolution", "Timed map events & rewards"],
+        tags: ["Action", "Competitive", "2 Player", "Casual", "Strategy"]
+    },
+    "Tap_3D_Blocks": {
+        gameId: "2c50bfeecb6c4849b504cfe446bf844e",
+        desc: "A layered 3D block puzzle. Flip, rotate and reveal tiles to clear the stacked board.",
+        players: "1.6k",
+        rating: "4.5",
+        overview: "Tap 3D Blocks presents layers upon layers of stacked dice blocks waiting for your skillful touch. Unlike flat puzzle games, this one dares you to see the whole picture from every angle. Flip, rotate and reveal new tiles as you uncover unexpected paths through the 3D stack. Boosters lend a hand when you get stuck, but the core strategy is all yours. With increasing difficulty and immersive 3D visuals, it tests your spatial awareness and delivers satisfying puzzle-solving fun.",
+        howToPlay: "Tap on visible tiles to remove them from the stack, unlocking layers underneath. Swipe to rotate the entire block pile and view it from different angles to find matchable tiles. Use boosters like hints and shuffle when you get stuck. Clear all blocks from the board to complete the level. Try to finish with as few moves as possible to earn a higher score.",
+        features: ["Immersive 3D stacked blocks", "Full rotation & angle control", "Dozens of challenging levels", "Helpful in-game boosters", "Spatial thinking puzzle gameplay"],
+        tags: ["Puzzle", "3D", "Block", "Single Player", "Brain Teaser"]
+    },
+    "My_Arcade_Center_2": {
+        gameId: "54aca2f7503041c0bd97e74d7e316a67",
+        desc: "A fast-paced arcade management tycoon game. Build, upgrade and expand your arcade empire.",
+        players: "2.4k",
+        rating: "4.7",
+        overview: "My Arcade Center 2 is a fast-paced arcade management tycoon game with deep business simulation mechanics. Build, customize, and expand your very own arcade across 7 unique maps. Earn revenue from customers during the day, then spend your earnings on upgrades at night: unlock new arcade machines, hire staff, and optimize your floor layout to maximize profits. Switch between centers anytime, unlock new characters and skins, complete daily missions, and grow your business with rewarding long-term progression.",
+        howToPlay: "Purchase arcade machines and place them around your hall to attract customers and earn coins. Reinvest your earnings to unlock new machines, upgrade facilities, and hire staff to improve efficiency. Complete daily missions for bonus rewards. Unlock new maps to open more arcade branches, and switch between them anytime to manage your empire. Keep optimizing your layout and upgrades to build the biggest arcade business.",
+        features: ["7 unique arcade maps", "Dozens of unlockable arcade machines", "Staff hiring & layout optimization", "Multi-center management system", "Daily missions & permanent upgrades"],
+        tags: ["Strategy", "Simulation", "Tycoon", "Management", "Casual"]
+    },
 
-"Car_Eats_Car_Underwater_Adventure": {
-    gameId: "16de13074932401f9f65f4023e586ab4",
-    desc: "Play free online Car Eats Car Underwater Adventure racing game, fun monster car police chase driving simulator with turbo boost, underwater highway races, car upgrade & boss fight action for all ages.",
-    players: "2.4k",
-    rating: "4.6",
-    overview: "Dive into wild underwater racing combat filled with intense police pursuits and rival vehicle battles. Every race brings chaotic highway-style showdowns beneath the waves. Craft and customize your unique monster car with powerful turbo engines and combat upgrades. Your fellow racers are locked away, and it’s up to you to blast through opponents, evade patrolling police fleets, and defeat giant boss vehicles to break them free. Mix fast driving action with strategic vehicle building for endless chaotic racing fun for all players.",
-    howToPlay: "Use arrow keys to steer and activate turbo boosts for rapid acceleration. Overtake rival cars while dodging police patrols scattered across underwater tracks. Gather upgrade materials mid-race to strengthen your vehicle’s attack and speed stats. Clear every boss encounter to unlock brand-new monster car skins and high-performance engine parts.",
-    features: ["Submarine race environments", "Custom monster car crafting", "Intense police chase sequences", "Boss vehicle battles", "Turbo acceleration mechanics"],
-    tags: ["Racing", "Combat", "Underwater", "Car", "Action"]
-},
-"Traffic_Racing": {
-    gameId: "f3ee6674b4ea4579aeefd54d7bf388f0",
-    desc: "Free online Traffic Racing highway driving game, fast speed car race simulator, offline career mode & online multiplayer racing league with sports car unlocks.",
-    players: "2.1k",
-    rating: "4.5",
-    overview: "Feel the rush of high-speed highway driving in this adrenaline-fueled racing title. Navigate tight gaps between endless streams of moving traffic as you race against the clock. Test your driving skills across two distinct play modes: a solo career campaign packed with progressive challenges, and online racing leagues where you compete against real global players. Master sharp lane changes and precise speed control to climb leaderboards and unlock faster sports cars.",
-    howToPlay: "Control steering with left and right arrow buttons, hit up to accelerate smoothly. Slip between dense highway traffic to avoid collisions and maintain top speeds. Complete career race objectives to unlock premium sports cars, then join online leagues to race against competitors worldwide for high score rankings.",
-    features: ["Busy highway race maps", "Single-player career mode", "Global online racing leagues", "Wide sports car roster", "Realistic traffic physics"],
-    tags: ["Racing", "Highway", "Traffic", "Online", "Casual"]
-},
-"i8_City_Driver": {
-    gameId: "f6acd919192c441c9aca2d20a18e04c6",
-    desc: "Free i8 City Driver open world supercar game, city drift stunt simulator with nitro boost, pet dog companion & car upgrade driving missions.",
-    players: "2.7k",
-    rating: "4.7",
-    overview: "Roam a vast, vibrant open city behind the wheel of a sleek customizable supercar. This driving simulator blends smooth high-speed cruising with thrilling drift and stunt challenges scattered across every neighborhood. Modify your ride with speed, handling and nitro upgrades to dominate all city missions. Bring along your cute dog sidekick to unlock exclusive bonus rewards as you pull off tricky stunts and hit speed checkpoints all over town.",
-    howToPlay: "Steer with arrow keys, tap space to activate nitro bursts for instant speed surges. Wander freely across the full city map to locate stunt ramps and drift zones. Collect upgrade kits scattered around roads to boost your supercar’s stats, and bring your pet dog along to earn extra mission bonuses.",
-    features: ["Large open city map", "Supercar upgrade system", "Drift & stunt challenges", "Pet companion mechanic", "Nitro speed boost"],
-    tags: ["Racing", "OpenWorld", "Supercar", "Drift", "Stunt"]
-},
-"Epic_Stunts_PvP_3D": {
-    gameId: "a75b82d28b4b4083bbc8ad4394570d97",
-    desc: "Epic Stunts PvP 3D free online muscle car stunt game, two player split screen multiplayer racing, aerial trick & car custom simulator.",
-    players: "3.0k",
-    rating: "4.6",
-    overview: "Show off insane aerial stunts in powerful roaring muscle cars inside a dedicated stunt arena. Three unique game styles let you practice solo tricks or face off against a friend in split-screen PvP races. Tweak every part of your muscle vehicle, from paint colors to engine power, to craft a ride matching your racing style. Pull backflips, wheelies and combo stunts to rack up high stunt scores and outshine your opponent in competitive two-player contests.",
-    howToPlay: "Adjust your car’s balance mid-air to pull clean stunts off large ramps. Customize paintwork, tires and engine power before each race. Invite a friend for local split-screen PvP stunt matches, earn stunt points to unlock exclusive muscle car skins.",
-    features: ["Realistic muscle car physics", "Two-player PvP mode", "Massive stunt ramps", "Vehicle customization", "Stunt score ranking"],
-    tags: ["Racing", "Stunt", "PvP", "Multiplayer", "3D"]
-},
-"Driverz_Ed": {
-    gameId: "c18628dc38904a5c8da49c7ba330d93b",
-    desc: "Free Driverz Ed open world driving game, exploration car simulator with hidden puzzle collectibles, unlock all vehicles & fast travel system.",
-    players: "2.2k",
-    rating: "4.5",
-    overview: "Take a laid-back exploratory road trip across multiple unique open landscapes in this casual driving adventure. No harsh time limits or aggressive races here—instead, wander freely to hunt down hidden puzzle fragments scattered across every region. Complete delivery, sightseeing and exploration quests to unlock dozens of distinct vehicle models. Use fast travel points to jump between zones quickly and finish every side objective at your own comfortable pace.",
-    howToPlay: "Drive freely across multiple open maps, follow mission markers to collect hidden puzzle fragments. Complete delivery and exploration quests to unlock new vehicle models. Use fast travel points to quickly switch regions and finish all side challenges for extra rewards.",
-    features: ["Multi-region open world", "Puzzle collection missions", "Huge car unlock roster", "Fast travel system", "Mixed racing & strategy"],
-    tags: ["Racing", "OpenWorld", "Exploration", "Puzzle", "Simulation"]
-},
-"SpelunKing": {
-    gameId: "a3a4111db59d496b96de651c307009ad",
-    desc: "Free SpelunKing mine match 3 puzzle game, underground gem matching adventure, village building & mine level unlock casual browser game.",
-    players: "2.8k",
-    rating: "4.7",
-    overview: "Venture deep into twisting mine tunnels in this relaxing match-3 puzzle journey. Swap colorful gem tiles to clear underground layers and gather valuable stone treasures. Track down your grandfather’s forgotten lost artifacts while collecting enough resources to restore the rundown village above ground. Unlock deeper mine levels and construct new town facilities as you clear more matching combos and complete special mine event puzzles.",
-    howToPlay: "Swap adjacent gem tiles to form groups of three or more matching stones and clear mine layers. Collect rare mineral resources to renovate village buildings and unlock deeper mine tunnels. Complete special mine event stages to obtain powerful match boosters.",
-    features: ["Underground mine scene", "Town building upgrade", "Gem collection mechanics", "Deep progressive levels", "Match3 booster system"],
-    tags: ["Puzzle", "Match3", "Mine", "Casual", "Building"]
-}
+    "Car_Eats_Car_Underwater_Adventure": {
+        gameId: "16de13074932401f9f65f4023e586ab4",
+        desc: "Play free online Car Eats Car Underwater Adventure racing game, fun monster car police chase driving simulator with turbo boost, underwater highway races, car upgrade & boss fight action for all ages.",
+        players: "2.4k",
+        rating: "4.6",
+        overview: "Dive into wild underwater racing combat filled with intense police pursuits and rival vehicle battles. Every race brings chaotic highway-style showdowns beneath the waves. Craft and customize your unique monster car with powerful turbo engines and combat upgrades. Your fellow racers are locked away, and it’s up to you to blast through opponents, evade patrolling police fleets, and defeat giant boss vehicles to break them free. Mix fast driving action with strategic vehicle building for endless chaotic racing fun for all players.",
+        howToPlay: "Use arrow keys to steer and activate turbo boosts for rapid acceleration. Overtake rival cars while dodging police patrols scattered across underwater tracks. Gather upgrade materials mid-race to strengthen your vehicle’s attack and speed stats. Clear every boss encounter to unlock brand-new monster car skins and high-performance engine parts.",
+        features: ["Submarine race environments", "Custom monster car crafting", "Intense police chase sequences", "Boss vehicle battles", "Turbo acceleration mechanics"],
+        tags: ["Racing", "Combat", "Underwater", "Car", "Action"]
+    },
+    "Traffic_Racing": {
+        gameId: "f3ee6674b4ea4579aeefd54d7bf388f0",
+        desc: "Free online Traffic Racing highway driving game, fast speed car race simulator, offline career mode & online multiplayer racing league with sports car unlocks.",
+        players: "2.1k",
+        rating: "4.5",
+        overview: "Feel the rush of high-speed highway driving in this adrenaline-fueled racing title. Navigate tight gaps between endless streams of moving traffic as you race against the clock. Test your driving skills across two distinct play modes: a solo career campaign packed with progressive challenges, and online racing leagues where you compete against real global players. Master sharp lane changes and precise speed control to climb leaderboards and unlock faster sports cars.",
+        howToPlay: "Control steering with left and right arrow buttons, hit up to accelerate smoothly. Slip between dense highway traffic to avoid collisions and maintain top speeds. Complete career race objectives to unlock premium sports cars, then join online leagues to race against competitors worldwide for high score rankings.",
+        features: ["Busy highway race maps", "Single-player career mode", "Global online racing leagues", "Wide sports car roster", "Realistic traffic physics"],
+        tags: ["Racing", "Highway", "Traffic", "Online", "Casual"]
+    },
+    "i8_City_Driver": {
+        gameId: "f6acd919192c441c9aca2d20a18e04c6",
+        desc: "Free i8 City Driver open world supercar game, city drift stunt simulator with nitro boost, pet dog companion & car upgrade driving missions.",
+        players: "2.7k",
+        rating: "4.7",
+        overview: "Roam a vast, vibrant open city behind the wheel of a sleek customizable supercar. This driving simulator blends smooth high-speed cruising with thrilling drift and stunt challenges scattered across every neighborhood. Modify your ride with speed, handling and nitro upgrades to dominate all city missions. Bring along your cute dog sidekick to unlock exclusive bonus rewards as you pull off tricky stunts and hit speed checkpoints all over town.",
+        howToPlay: "Steer with arrow keys, tap space to activate nitro bursts for instant speed surges. Wander freely across the full city map to locate stunt ramps and drift zones. Collect upgrade kits scattered around roads to boost your supercar’s stats, and bring your pet dog along to earn extra mission bonuses.",
+        features: ["Large open city map", "Supercar upgrade system", "Drift & stunt challenges", "Pet companion mechanic", "Nitro speed boost"],
+        tags: ["Racing", "OpenWorld", "Supercar", "Drift", "Stunt"]
+    },
+    "Epic_Stunts_PvP_3D": {
+        gameId: "a75b82d28b4b4083bbc8ad4394570d97",
+        desc: "Epic Stunts PvP 3D free online muscle car stunt game, two player split screen multiplayer racing, aerial trick & car custom simulator.",
+        players: "3.0k",
+        rating: "4.6",
+        overview: "Show off insane aerial stunts in powerful roaring muscle cars inside a dedicated stunt arena. Three unique game styles let you practice solo tricks or face off against a friend in split-screen PvP races. Tweak every part of your muscle vehicle, from paint colors to engine power, to craft a ride matching your racing style. Pull backflips, wheelies and combo stunts to rack up high stunt scores and outshine your opponent in competitive two-player contests.",
+        howToPlay: "Adjust your car’s balance mid-air to pull clean stunts off large ramps. Customize paintwork, tires and engine power before each race. Invite a friend for local split-screen PvP stunt matches, earn stunt points to unlock exclusive muscle car skins.",
+        features: ["Realistic muscle car physics", "Two-player PvP mode", "Massive stunt ramps", "Vehicle customization", "Stunt score ranking"],
+        tags: ["Racing", "Stunt", "PvP", "Multiplayer", "3D"]
+    },
+    "Driverz_Ed": {
+        gameId: "c18628dc38904a5c8da49c7ba330d93b",
+        desc: "Free Driverz Ed open world driving game, exploration car simulator with hidden puzzle collectibles, unlock all vehicles & fast travel system.",
+        players: "2.2k",
+        rating: "4.5",
+        overview: "Take a laid-back exploratory road trip across multiple unique open landscapes in this casual driving adventure. No harsh time limits or aggressive races here—instead, wander freely to hunt down hidden puzzle fragments scattered across every region. Complete delivery, sightseeing and exploration quests to unlock dozens of distinct vehicle models. Use fast travel points to jump between zones quickly and finish every side objective at your own comfortable pace.",
+        howToPlay: "Drive freely across multiple open maps, follow mission markers to collect hidden puzzle fragments. Complete delivery and exploration quests to unlock new vehicle models. Use fast travel points to quickly switch regions and finish all side challenges for extra rewards.",
+        features: ["Multi-region open world", "Puzzle collection missions", "Huge car unlock roster", "Fast travel system", "Mixed racing & strategy"],
+        tags: ["Racing", "OpenWorld", "Exploration", "Puzzle", "Simulation"]
+    },
+    "SpelunKing": {
+        gameId: "a3a4111db59d496b96de651c307009ad",
+        desc: "Free SpelunKing mine match 3 puzzle game, underground gem matching adventure, village building & mine level unlock casual browser game.",
+        players: "2.8k",
+        rating: "4.7",
+        overview: "Venture deep into twisting mine tunnels in this relaxing match-3 puzzle journey. Swap colorful gem tiles to clear underground layers and gather valuable stone treasures. Track down your grandfather’s forgotten lost artifacts while collecting enough resources to restore the rundown village above ground. Unlock deeper mine levels and construct new town facilities as you clear more matching combos and complete special mine event puzzles.",
+        howToPlay: "Swap adjacent gem tiles to form groups of three or more matching stones and clear mine layers. Collect rare mineral resources to renovate village buildings and unlock deeper mine tunnels. Complete special mine event stages to obtain powerful match boosters.",
+        features: ["Underground mine scene", "Town building upgrade", "Gem collection mechanics", "Deep progressive levels", "Match3 booster system"],
+        tags: ["Puzzle", "Match3", "Mine", "Casual", "Building"]
+    },
+     "Fierce_Shot": {
+        gameId: "837eb6bd30a14d818e8fb33e80f8df7d",
+        desc: "Play Fierce Shot free online - the best manga-style football shooting game. Train your shooting skills, win continental cups, and become the world champion striker in this addictive HTML5 soccer game.",
+        players: "2.3k",
+        rating: "4.6",
+        overview: "Fierce Shot is the top free online football game that blends thrilling soccer action with stunning manga art style. Play directly in your browser with no download required and kick off your professional striker career. Conquer every challenge across Continental and International Cup tournaments, master precision shooting in endless training mode, and manage your daily development to become the best football player in the world. This mobile-friendly HTML5 soccer game features progressive difficulty, satisfying goal physics, and hundreds of levels that keep you coming back for more. Perfect for quick casual breaks or longer gaming sessions, Fierce Shot delivers the best free penalty shootout experience online.",
+        howToPlay: "Play Fierce Shot free on desktop and mobile: aim your shot by adjusting angle and power with simple tap or click controls. Time your kicks perfectly to curve past the goalkeeper and score amazing goals. Complete all cup tournament challenges to advance your football career and unlock new stadiums. Use the endless free training mode to practice your accuracy and unlock stronger shot abilities. Upgrade your power, precision, and curve stats to become an unbeatable football striker. No download needed - play instantly in your browser.",
+        features: ["Free online football game no download", "Manga-style soccer gameplay", "Continental & International cup tournaments", "Endless free training mode", "Mobile friendly HTML5 game", "Progressive skill upgrade system", "Realistic shooting physics"],
+        tags: ["Football", "Soccer", "Sports", "Manga", "Penalty Kick", "Free Online Game", "HTML5", "Mobile Friendly", "Single Player", "Skill Game", "Browser Game", "No Download"]
+    },
+    "Barbee_Summer_Vacation": {
+        gameId: "37f8e78be66540648b0066d7f2826b6a",
+        desc: "Play Barbee Summer Vacation free online - the best summer dress up game for girls. Create stylish beach outfits with hundreds of clothes, dresses, and accessories in this fun HTML5 fashion game.",
+        players: "3.1k",
+        rating: "4.4",
+        overview: "Barbee Summer Vacation is the top free online dress up game for girls who love fashion and summer style. Play instantly in your browser with no download required and help Barbee and her best friends get ready for their dream summer vacation. Choose from hundreds of flowy summer dresses, trendy sunglasses, floral tops, beach hats, and fun accessories to create stunning sunshine-ready looks. This mobile-friendly HTML5 fashion game lets you mix and match outfits across multiple characters, each with their own unique vacation style. From pool parties to tropical beach walks, design the perfect outfit for every summer occasion. The best free girls dress up game you can play online right now.",
+        howToPlay: "Play Barbee Summer Vacation free on any device: select your favorite character to start the dress up adventure. Browse through clothing categories including dresses, tops, bottoms, shoes, hairstyles, and accessories. Tap items to try them on and build your perfect summer vacation look. Mix colors, patterns, and styles to create hundreds of unique outfit combinations. Save your favorite looks and unlock new characters and clothing collections as you progress. No installation needed - play directly in your web browser.",
+        features: ["Free online dress up game for girls", "Multiple stylish characters", "Hundreds of clothing items & accessories", "Summer beach vacation theme", "Mobile friendly HTML5 game", "Mix & match fashion mechanics", "Bright colorful cartoon visuals"],
+        tags: ["Dress Up", "Girls", "Fashion", "Summer", "Barbie Style", "Free Online Game", "HTML5", "Mobile Friendly", "Casual", "Single Player", "Browser Game", "Makeup"]
+    },
+    "Wake_Up_the_Box": {
+        gameId: "88d7078602364cfd845f7c2796c456c7",
+        desc: "Play Wake Up the Box free online - the best physics puzzle game. Use gravity and objects to wake the sleepy box in this challenging brain teaser HTML5 game perfect for all ages.",
+        players: "1.8k",
+        rating: "4.7",
+        overview: "Wake Up the Box is the top free online physics puzzle game that will test your creativity and problem-solving skills. Play instantly in your browser with no download required. Each level features a sleepy Mr. Box who just won't wake up, surrounded by fixed and moving objects you can interact with. Use realistic gravity, momentum, and clever chain reactions to disturb the box and successfully wake him up. This mobile-friendly HTML5 brain teaser features dozens of levels with increasing complexity, requiring you to think outside the box (pun intended) to find solutions. Simple one-tap controls and satisfying physics make this the best free puzzle game for quick brain training breaks or longer casual play sessions.",
+        howToPlay: "Play Wake Up the Box free on desktop and mobile: study each level layout carefully and identify which objects you can interact with. Click or tap objects to activate them and set the realistic physics engine in motion. Use gravity, swinging ropes, falling blocks, and chain reactions to bump, drop, or push the sleeping box. Complete all levels by successfully waking Mr. Box every time. Think ahead and plan your moves to find the optimal solution for each puzzle. No download required - play directly in any modern web browser.",
+        features: ["Free online physics puzzle game", "Dozens of unique brain teaser levels", "Realistic gravity physics engine", "Fixed and interactive moving objects", "Mobile friendly HTML5 game", "Simple one-tap controls", "Chain reaction puzzle mechanics"],
+        tags: ["Puzzle", "Physics", "Brain Teaser", "Wake Up Box", "Free Online Game", "HTML5", "Mobile Friendly", "Single Player", "Casual", "Browser Game", "Logic", "No Download"]
+    },
+    "SpelunKing": {
+        gameId: "a3a4111db59d496b96de651c307009ad",
+        desc: "Play SpelunKing free online - the best match 3 mining adventure game. Dig deep underground, collect gems, and rebuild the town in this addictive HTML5 match-3 building game.",
+        players: "2.7k",
+        rating: "4.5",
+        overview: "SpelunKing is the top free online match 3 game that combines classic gem matching with exciting mining adventure and town building gameplay. Play instantly in your browser with no download required. Dive deep underground, search for your grandfather's lost treasures, collect precious gemstones, and help the villagers rebuild the town of Farnsbury. Match colorful gems to dig deeper into the mine, upgrade buildings, unlock new facilities, and gain special power-ups as you progress. This mobile-friendly HTML5 match-3 adventure features dozens of mine levels, a full town building system, and an engaging story that drives you toward the bottom of the deepest mine. Become the ultimate Spelunk King or Queen in the best free match 3 game online.",
+        howToPlay: "Play SpelunKing free on any device: swap adjacent gems to match 3 or more of the same color and clear them from the board. Complete each level's unique objectives to dig deeper into the mine. Collect coins, gems, and resources to upgrade town buildings and unlock new facilities that grant powerful bonuses. Reach the bottom of each mine section to advance the story and discover hidden treasures. Use special power-ups and combos to clear tough levels faster. No installation needed - play directly in your web browser.",
+        features: ["Free online match 3 adventure game", "Deep mining gameplay with story", "Town building & upgrade system", "Dozens of gem matching levels", "Mobile friendly HTML5 game", "Special power-ups & combos", "Treasure hunting mechanics"],
+        tags: ["Match 3", "Match Three", "Mining", "Adventure", "Building", "Gems", "Free Online Game", "HTML5", "Mobile Friendly", "Puzzle", "Browser Game", "No Download"]
+    },
+    "Mansion_Story_Match": {
+        gameId: "1011183f1ce348f0a3735476f5523302",
+        desc: "Play Mansion Story Match free online - the best mystery match 3 puzzle game. Explore a haunted mansion, solve gem puzzles, and uncover hidden secrets in this story-driven HTML5 game.",
+        players: "2.4k",
+        rating: "4.6",
+        overview: "Mansion Story Match is the top free online match 3 game set inside a grand and mysterious old mansion. Play instantly in your browser with no download required. Explore dusty attics, lush gardens, forgotten hallways, and secret rooms as you uncover long-lost family secrets and dazzling hidden treasures. Solve hundreds of challenging gem matching puzzles, collect rare relics, and piece together an intriguing mystery story that unfolds room by room. This mobile-friendly HTML5 puzzle adventure features beautiful visuals, engaging narrative, and progressively challenging match 3 levels. Every corner of the mansion holds a surprise waiting to be discovered. The best free story-driven match 3 game you can play online today.",
+        howToPlay: "Play Mansion Story Match free on desktop and mobile: match 3 or more gems of the same color to clear them from the game board. Complete each level's specific objective to advance through the mysterious mansion. Unlock new rooms as you progress and reveal new chapters of the intriguing story. Collect rare relics, treasures, and clues along your exploration journey. Use special boosters and power-ups when you get stuck on difficult puzzles. No download needed - start playing instantly in any modern web browser.",
+        features: ["Free online story match 3 game", "Hundreds of gem matching levels", "Mysterious mansion exploration", "Deep narrative story progression", "Mobile friendly HTML5 game", "Rare relic & treasure collection", "Special boosters & power-ups"],
+        tags: ["Match 3", "Match Three", "Mystery", "Story", "Mansion", "Puzzle", "Free Online Game", "HTML5", "Mobile Friendly", "Adventure", "Browser Game", "No Download"]
+    },
+    "Offroad_Crash_Climber_4X4": {
+        gameId: "e779cdcaf9ee4dfe97b8df28e282a3e1",
+        desc: "Play Offroad Crash Climber 4X4 free online - the best offroad driving game. Climb steep hills, crash obstacles, and upgrade your truck in this physics-based HTML5 racing game.",
+        players: "2.9k",
+        rating: "4.8",
+        overview: "Offroad Crash Climber 4X4 is the top free online offroad driving game with realistic physics and epic mountain terrain. Play instantly in your browser with no download required. Take control of a powerful 4x4 truck and drive across rough rocky terrain, climb steep hills, avoid deadly hazards, and collect coins to fully upgrade your vehicle. Improve your engine power, suspension, wheels, repair system, and fuel capacity to tackle the toughest trails. Unlock special abilities including Bounce mode, Low Gear, and 4x4 traction to overcome impossible obstacles. This mobile-friendly HTML5 racing game features both Endless Mode and dedicated Crash Levels, with procedurally generated terrain that makes every run a new adventure. The best free offroad truck game you can play online.",
+        howToPlay: "Play Offroad Crash Climber 4X4 free on any device: use gas and brake controls to drive your 4x4 truck across challenging mountain terrain. Balance your speed carefully to climb steep hills without flipping your vehicle backwards. Collect coins scattered along the trail to purchase powerful vehicle upgrades. Unlock special abilities like Bounce, Low Gear, and 4WD to overcome the most difficult obstacles. Survive as long as possible in Endless Mode or complete specific crash objectives in dedicated level mode. No installation needed - play directly in your web browser.",
+        features: ["Free online offroad driving game", "Realistic 4x4 truck physics", "Endless mode & crash challenge levels", "Full vehicle upgrade system", "Mobile friendly HTML5 game", "Special abilities (Bounce, Low Gear, 4WD)", "Procedurally generated terrain"],
+        tags: ["Racing", "Driving", "Offroad", "4x4", "Truck", "Physics", "Hill Climb", "Free Online Game", "HTML5", "Mobile Friendly", "Upgrade", "Browser Game", "No Download"]
+    }
 
-    
+
 };
+
+
+
 
 // ============================================
 // New Game Template (copy and modify)
