@@ -16,6 +16,12 @@
 // [11] iPhonePop  iPhone popularity score
 // [12] gameId     Unique GameDistribution platform ID
 var games = [
+    ["Hawaii_Match_6", "/games/hawaii-match-6/", "", "", "https://img.gamedistribution.com/1a6495d26ac541c8820eca4527ed6cfa-512x512.jpg", "Desktop iPadOld iPadNew iPhone AndroidLow AndroidMid AndroidHigh", "Puzzle Match3 New Landscape", "2026-07-28", 90, 88, 85, 82, "1a6495d26ac541c8820eca4527ed6cfa"],
+    ["Escape_the_Alien_Prison", "/games/escape-the-alien-prison/", "", "", "https://img.gamedistribution.com/be797a3996324c03b20bad496a82819f-512x384.jpg", "Desktop iPadOld iPadNew iPhone AndroidLow AndroidMid AndroidHigh", "Action Sci-Fi Parkour New Landscape", "2026-07-22", 93, 90, 87, 84, "be797a3996324c03b20bad496a82819f"],
+    ["Palm_Island_Solitaire", "/games/palm-island-solitaire/", "", "", "https://img.gamedistribution.com/03091e0b83dd4efb826dc65d73393e9e-512x384.jpg", "Desktop iPadOld iPadNew iPhone AndroidLow AndroidMid AndroidHigh", "Card Solitaire New Landscape", "2026-07-28", 89, 86, 83, 80, "03091e0b83dd4efb826dc65d73393e9e"],
+    ["Car_Eats_Car_Volcanic_Adventure", "/games/car-eats-car-volcanic-adventure/", "", "", "https://img.gamedistribution.com/2889b8c611d84c00a3e077ee5bd21bf0-512x512.jpeg", "Desktop iPadOld iPadNew iPhone AndroidLow AndroidMid AndroidHigh", "Racing Action New Landscape", "2026-07-28", 92, 89, 86, 84, "2889b8c611d84c00a3e077ee5bd21bf0"],
+    ["Beach_Club", "/games/beach-club/", "", "", "https://img.gamedistribution.com/5e400f95d3fc4ee9b2538fefcf864e67-512x512.jpeg", "Desktop iPadOld iPadNew iPhone AndroidLow AndroidMid AndroidHigh", "Casual Simulation New Landscape", "2026-07-28", 88, 85, 82, 79, "5e400f95d3fc4ee9b2538fefcf864e67"],
+
     ["Tap_Arrow_Away", "/games/tap-arrow-away/", "", "", "https://img.gamedistribution.com/07393e2820d1486ca209959528869a5f-512x384.jpg", "Desktop iPadOld iPadNew iPhone AndroidLow AndroidMid AndroidHigh", "Casual New Landscape", "2026-06-13", 90, 87, 84, 80, "07393e2820d1486ca209959528869a5f"],
     ["Football_3D", "/games/football-3d/", "", "", "https://img.gamedistribution.com/540d36010bb94e288a660456efaebff9-512x384.jpeg", "Desktop iPadOld iPadNew iPhone AndroidLow AndroidMid AndroidHigh", "Action Top Landscape", "2026-01-01", 98, 95, 92, 90, "540d36010bb94e288a660456efaebff9"],
     ["Jewel_Coloring", "/games/jewel-coloring/", "", "", "https://img.gamedistribution.com/fe81d3ecbf5540ca8d9fe39387635d8a-512x384.jpg", "Desktop iPadOld iPadNew iPhone AndroidLow AndroidMid AndroidHigh", "Puzzle New Landscape", "2026-06-13", 90, 87, 84, 80, "fe81d3ecbf5540ca8d9fe39387635d8a"],
@@ -108,6 +114,57 @@ var games = [
 // features   List of game highlights (displayed on detail page)
 // tags       Topic tags (for tag aggregation pages and SEO optimization)
 var gameDetails = {
+        "Hawaii_Match_6": {
+        gameId: "1a6495d26ac541c8820eca4527ed6cfa",
+        desc: "Play Hawaii Match 6 free online no download - the best tropical match 3 puzzle game for adults. Match exotic fruits flowers treasures in this relaxing unblocked HTML5 browser game playable on mobile and desktop.",
+        players: "2.9k",
+        rating: "4.7",
+        overview: "Hawaii Match 6 is the best free online tropical match 3 puzzle game you can play right now with no download required. This unblocked HTML5 browser game takes you on a relaxing island adventure through beautiful Hawaiian landscapes, perfect on both mobile phones and desktop computers. Explore sun-soaked beaches, lush jungles, and volcanic vistas while matching exotic fruits, tropical flowers, and hidden island treasures. Complete fun challenging goals in limited moves by combining symbols and creating powerful bonus boosters. Perfect for quick casual breaks, relaxing brain training, or unwinding after a long day, this free match 3 game features hundreds of levels, helpful boosters, hidden rewards, and smooth one-tap controls. Play now directly in your browser - no installation, no signup, just endless tropical puzzle fun.",
+        howToPlay: "Play Hawaii Match 6 free on any device: swap adjacent tiles to match 3 or more of the same symbol and clear them from the board. Create bigger matches of 4 or 5 to unlock powerful boosters with explosive effects. Complete each level's objective before you run out of moves to advance through the tropical island maps. Collect hidden treasures and bonus rewards as you progress. Use special boosters strategically to beat the most challenging levels. No download needed - play instantly in any modern web browser.",
+        features: ["Free online match 3 puzzle game no download", "Beautiful tropical Hawaii island theme", "Hundreds of challenging match levels", "Powerful boosters & bonus rewards", "Mobile friendly HTML5 game", "Exotic fruits flowers treasures symbols", "Relaxing casual gameplay"],
+        tags: ["Match 3", "Puzzle", "Tropical", "Hawaii", "Island", "Relaxing", "Free Online Game", "HTML5", "Mobile Friendly", "Single Player", "Browser Game", "No Download"]
+    },
+    "Escape_the_Alien_Prison": {
+        gameId: "be797a3996324c03b20bad496a82819f",
+        desc: "Play Escape the Alien Prison free online no download - the best sci-fi parkour action game for boys. Run jump fight escape alien spaceship prison in this unblocked HTML5 browser adventure game playable on mobile and desktop.",
+        players: "3.2k",
+        rating: "4.7",
+        overview: "Escape the Alien Prison is the best free online sci-fi action game you can play right now with no download required. This unblocked HTML5 browser game combines intense parkour running gameplay with an epic space prison escape story that works perfectly on mobile and desktop. You wake up trapped inside a massive high-tech alien spaceship lost deep in the cosmos, with only one mission: break out and fight your way to freedom. Navigate deadly obstacle courses, hack complex security systems, and take down dangerous extraterrestrial threats across dozens of challenging levels. Perfect for boys who love action games, this free parkour adventure features a complete single player story campaign, brain-teasing puzzles, hidden collectibles, and full character progression. Play instantly in your browser - no installation, no signup, just pure free sci-fi action gaming fun.",
+        howToPlay: "Play Escape the Alien Prison free on desktop and mobile: use arrow keys or touch controls to run, jump, and slide through the alien spaceship. Navigate dangerous obstacle courses and avoid deadly traps along your escape route. Hack security systems to unlock doors and disable alarms. Fight or sneak past extraterrestrial guards to stay alive. Collect hidden items and solve puzzles to progress through the story campaign. No download needed - start your escape instantly in any modern web browser.",
+        features: ["Free online sci-fi action game no download", "Epic alien prison escape story campaign", "Fast-paced parkour & running gameplay", "Challenging puzzles & hacking mechanics", "Mobile friendly HTML5 game", "Hidden collectibles & progression system", "High-tech spaceship environments"],
+        tags: ["Action", "Parkour", "Sci-Fi", "Running", "Escape", "Adventure", "Free Online Game", "HTML5", "Mobile Friendly", "Single Player", "Browser Game", "No Download"]
+    },
+    "Palm_Island_Solitaire": {
+        gameId: "03091e0b83dd4efb826dc65d73393e9e",
+        desc: "Play Palm Island Solitaire free online no download - the best tropical golf solitaire card game for adults. Relax with sunny island card puzzles in this unblocked HTML5 browser game playable on mobile.",
+        players: "2.4k",
+        rating: "4.6",
+        overview: "Palm Island Solitaire is the best free online tropical card game you can play instantly with no download required. This unblocked HTML5 browser game puts a fresh sunny twist on classic Golf Solitaire and works perfectly on mobile phones, tablets, and desktop computers. Catch the island breeze as you play through relaxing card levels with palm trees, ocean views, and beach vibes. Score low by matching cards one rank higher or lower, reshuffle when you get stuck, and enjoy every move with playful golf lingo and tropical flair. Perfect for quick casual breaks or longer relaxing sessions at home, this free solitaire game features dozens of levels, smooth animations, and simple tap controls. Play now directly in your browser - no installation, no signup, just sunny island card game fun.",
+        howToPlay: "Play Palm Island Solitaire free on any device: tap a card that is one rank higher or lower than the active card to move it to the foundation. Clear as many cards from the board as possible to score low and win each level. Use the reshuffle button when you get stuck with no valid moves. Work strategically to clear the entire board for a perfect score. Progress through sunny tropical island themes as you unlock new levels. No installation needed - play directly in your web browser.",
+        features: ["Free online golf solitaire card game", "Tropical palm island beach theme", "Reshuffle & hint support", "Dozens of relaxing levels", "Mobile friendly HTML5 game", "Smooth tap controls", "Sunny casual gameplay"],
+        tags: ["Card Game", "Solitaire", "Golf Solitaire", "Tropical", "Island", "Casual", "Free Online Game", "HTML5", "Mobile Friendly", "Single Player", "Browser Game", "No Download"]
+    },
+    "Car_Eats_Car_Volcanic_Adventure": {
+        gameId: "2889b8c611d84c00a3e077ee5bd21bf0",
+        desc: "Play Car Eats Car Volcanic Adventure free online no download - the best monster car racing battle game for boys. Overtake rivals upgrade cars fight police in this unblocked HTML5 browser racing game.",
+        players: "3.4k",
+        rating: "4.8",
+        overview: "Car Eats Car Volcanic Adventure is the best free online monster car racing battle game you can play with no download required. This unblocked HTML5 browser game delivers chaotic highway racing combat against rival vehicles and police chases, and works great on both mobile and desktop. Overtake enemies on dynamic volcanic tracks, build and customize your own evil monster car in the incubator, and do everything you can to free your friends from prison. Good driving skills and turbo speed are essential in this crazy driving simulator filled with police chase action. Become a car tycoon, upgrade your vehicles, and fight giant boss cars to survive these ultimate volcanic races. Perfect for boys who love action racing, this free game features multiple tracks, full vehicle upgrades, and explosive combat gameplay.",
+        howToPlay: "Play Car Eats Car Volcanic Adventure free on desktop and mobile: use arrow keys to steer your monster car and activate turbo boosts for maximum speed. Overtake rival vehicles while dodging police patrols on volcanic highway tracks. Collect upgrade parts scattered along the road to strengthen your car's attack and speed stats. Build custom cars in the incubator to unlock unique monster vehicles. Defeat boss cars at the end of each track to free your imprisoned friends. No download needed - race instantly in any modern web browser.",
+        features: ["Free online monster car racing game", "Volcanic highway battle tracks", "Custom car building & upgrades", "Intense police chase sequences", "Boss vehicle combat fights", "Turbo acceleration mechanics", "Mobile friendly HTML5 game"],
+        tags: ["Racing", "Combat", "Monster Car", "Police Chase", "Action", "Volcano", "Free Online Game", "HTML5", "Mobile Friendly", "Single Player", "Browser Game", "No Download"]
+    },
+    "Beach_Club": {
+        gameId: "5e400f95d3fc4ee9b2538fefcf864e67",
+        desc: "Play Beach Club free online no download - the best relaxing beach management tycoon game. Build expand your beach empire collect money in this unblocked HTML5 browser simulation game for all ages.",
+        players: "2.7k",
+        rating: "4.6",
+        overview: "Beach Club is the best free online beach management tycoon game you can play instantly with no download required. This unblocked HTML5 browser simulation game lets you build and run your very own beach paradise, and works perfectly on mobile and desktop devices. Relax while listening to waves, ocean sounds, and seagulls as you manage your sunny beach resort. Let your helpers do all the work while you stroll through the sand collecting money from happy customers. Unlock new facilities, buy more seats, expand your beach area, and build your own summer empire from a small spot into the most beautiful beach club around. Perfect for casual relaxing sessions, this free idle tycoon game features smooth progression, multiple upgrade tiers, and satisfying idle gameplay.",
+        howToPlay: "Play Beach Club free on any device: tap on customers and facilities to collect money as it accumulates. Use your earnings to unlock new beach items, buy more seats, and expand your resort area. Hire helpers to automatically manage sections of your beach club. Keep towels clean and facilities upgraded to attract more visitors and earn higher profits. Keep expanding until you build the biggest and most beautiful beach paradise around. No installation needed - play directly in your web browser.",
+        features: ["Free online beach management tycoon game", "Relaxing idle simulation gameplay", "Hire helpers auto-management", "Expandable beach resort empire", "Multiple upgrade tiers", "Mobile friendly HTML5 game", "Calming ocean atmosphere"],
+        tags: ["Simulation", "Tycoon", "Management", "Beach", "Idle", "Casual", "Free Online Game", "HTML5", "Mobile Friendly", "Single Player", "Browser Game", "No Download"]
+    },
+    
     "Tap_Arrow_Away": {
         gameId: "07393e2820d1486ca209959528869a5f",
         desc: "An addictive tap-away puzzle game. Remove arrow blocks to solve puzzles and relax your mind.",
