@@ -1041,10 +1041,19 @@
                     <div class="loader-ring"></div>
                     <p class="loader-text">LOADING GAME...</p>
                 </div>
-                <iframe id="gameIframe" allowfullscreen="true" allow="fullscreen; autoplay; gamepad; pointer-lock"
+                <!-- <iframe id="gameIframe" allowfullscreen="true" allow="fullscreen; autoplay; gamepad; pointer-lock"
                     sandbox="allow-scripts allow-same-origin allow-fullscreen allow-pointer-lock allow-forms allow-popups allow-top-navigation-by-user-activation"
                     referrerpolicy="strict-origin-when-cross-origin">
-                </iframe>
+                </iframe> -->
+
+                <iframe 
+    id="gameIframe" 
+    allowfullscreen="true" 
+    allow="fullscreen; autoplay; gamepad; pointer-lock"
+    sandbox="allow-scripts allow-same-origin allow-fullscreen allow-pointer-lock"
+    referrerpolicy="no-referrer-when-downgrade"
+    loading="lazy">
+</iframe>
             </div>
 
             <div class="control-bar">
