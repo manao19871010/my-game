@@ -1041,19 +1041,10 @@
                     <div class="loader-ring"></div>
                     <p class="loader-text">LOADING GAME...</p>
                 </div>
-                <!-- <iframe id="gameIframe" allowfullscreen="true" allow="fullscreen; autoplay; gamepad; pointer-lock"
-                    sandbox="allow-scripts allow-same-origin allow-fullscreen allow-pointer-lock allow-forms allow-popups allow-top-navigation-by-user-activation"
-                    referrerpolicy="strict-origin-when-cross-origin">
-                </iframe> -->
-
-                <iframe 
-    id="gameIframe" 
-    allowfullscreen="true" 
-    allow="fullscreen; autoplay; gamepad; pointer-lock"
-    sandbox="allow-scripts allow-same-origin allow-fullscreen allow-pointer-lock"
-    referrerpolicy="no-referrer-when-downgrade"
-    loading="lazy">
-</iframe>
+                <iframe id="gameIframe" allowfullscreen="true" allow="fullscreen; autoplay; gamepad; pointer-lock"
+                    sandbox="allow-scripts allow-same-origin allow-fullscreen allow-pointer-lock allow-forms allow-popups"
+                    referrerpolicy="no-referrer-when-downgrade" loading="lazy">
+                </iframe>
             </div>
 
             <div class="control-bar">
@@ -1164,6 +1155,11 @@
     <script>
         var basePaddingTop = 56.25; // Default 16:9 ratio
         var currentSizeOffset = 0;
+
+        window.addEventListener('beforeunload', function (e) {
+            e.preventDefault();
+            e.returnValue = '';
+        });
 
         const gameIframe = document.getElementById("gameIframe");
 
@@ -1387,7 +1383,8 @@
                 var iframe = document.getElementById('gameIframe');
                 var referrerUrl = encodeURIComponent(window.location.href);
                 // iframe.src = "https://html5.gamedistribution.com/" + details.gameId + "/?gd_sdk_referrer_url=" + referrerUrl;
-                iframe.src = "https://html5.gamedistribution.com/" + details.gameId + "/index.html?gd_sdk_referrer_url=" + referrerUrl;
+                   iframe.src = "https://html5.gamedistribution.com/" + details.gameId + "/?gd_sdk_referrer_url=" + referrerUrl;
+                // iframe.src = "https://html5.gamedistribution.com/" + details.gameId + "/index.html?gd_sdk_referrer_url=" + referrerUrl;
                 // Hide loading animation after iframe loads
                 iframe.onload = function () {
                     setTimeout(function () {
