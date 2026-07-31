@@ -16,6 +16,15 @@
 // [11] iPhonePop  iPhone popularity score
 // [12] gameId     Unique GameDistribution platform ID
 var games = [
+
+    ["Dynamons_4", "/games/dynamons-4/", "", "", "https://img.gamedistribution.com/abbcaef3d1294f5ab7c5b77a2c727baa-512x384.jpeg", "Desktop iPadOld iPadNew iPhone AndroidLow AndroidMid AndroidHigh", "RPG New Landscape", "2026-07-31", 92, 90, 88, 85, "abbcaef3d1294f5ab7c5b77a2c727baa"],
+    ["Steal_A_Fish", "/games/steal-a-fish/", "", "", "https://img.gamedistribution.com/d9afb8cc970c48c4b7cacef65a5aef61-512x384.jpg", "Desktop iPadOld iPadNew iPhone AndroidLow AndroidMid AndroidHigh", "Action New Landscape", "2026-07-31", 89, 86, 83, 80, "d9afb8cc970c48c4b7cacef65a5aef61"],
+    ["Dynamons_5", "/games/dynamons-5/", "", "", "https://img.gamedistribution.com/53bb9433a5324091a4b29544ea0f93dd-512x384.jpg", "Desktop iPadOld iPadNew iPhone AndroidLow AndroidMid AndroidHigh", "RPG New Landscape", "2026-07-31", 93, 91, 89, 86, "53bb9433a5324091a4b29544ea0f93dd"],
+    ["Annoying_Boss_Punch_Game", "/games/annoying-boss-punch-game/", "", "", "https://img.gamedistribution.com/bd9cc9da45b04ee293306209653d8cfb-512x384.jpg", "Desktop iPadOld iPadNew iPhone AndroidLow AndroidMid AndroidHigh", "Action Casual New Landscape", "2026-07-31", 88, 85, 82, 79, "bd9cc9da45b04ee293306209653d8cfb"],
+    ["Bubble_Shooter_Crystal_Hunt", "/games/bubble-shooter-crystal-hunt/", "", "", "https://img.gamedistribution.com/11abb92c950f4b29a60b36037fde6951-512x384.jpg", "Desktop iPadOld iPadNew iPhone AndroidLow AndroidMid AndroidHigh", "Puzzle New Landscape", "2026-07-31", 89, 91, 89, 94, "11abb92c950f4b29a60b36037fde6951"],
+    ["World_Wars_Tanks", "/games/world-wars-tanks/", "", "", "https://img.gamedistribution.com/7fd03dcfe17541c9a7749c50dcfe25de-512x512.jpg", "Desktop iPadOld iPadNew iPhone AndroidLow AndroidMid AndroidHigh", "Strategy Action New Landscape", "2026-07-31", 91, 88, 85, 82, "7fd03dcfe17541c9a7749c50dcfe25de"],
+    ["Farm_vs_Zombies", "/games/farm-vs-zombies/", "", "", "https://img.gamedistribution.com/557d5359337f4ed6aa97d2f1da0acf41-512x384.jpg", "Desktop iPadOld iPadNew iPhone AndroidLow AndroidMid AndroidHigh", "Strategy Survival New Landscape", "2026-07-31", 90, 87, 84, 81, "557d5359337f4ed6aa97d2f1da0acf41"],
+
     ["Hawaii_Match_6", "/games/hawaii-match-6/", "", "", "https://img.gamedistribution.com/1a6495d26ac541c8820eca4527ed6cfa-512x512.jpg", "Desktop iPadOld iPadNew iPhone AndroidLow AndroidMid AndroidHigh", "Puzzle Match3 New Landscape", "2026-07-28", 90, 88, 85, 82, "1a6495d26ac541c8820eca4527ed6cfa"],
     ["Escape_the_Alien_Prison", "/games/escape-the-alien-prison/", "", "", "https://img.gamedistribution.com/be797a3996324c03b20bad496a82819f-512x384.jpg", "Desktop iPadOld iPadNew iPhone AndroidLow AndroidMid AndroidHigh", "Action Sci-Fi Parkour New Landscape", "2026-07-22", 93, 90, 87, 84, "be797a3996324c03b20bad496a82819f"],
     ["Palm_Island_Solitaire", "/games/palm-island-solitaire/", "", "", "https://img.gamedistribution.com/03091e0b83dd4efb826dc65d73393e9e-512x384.jpg", "Desktop iPadOld iPadNew iPhone AndroidLow AndroidMid AndroidHigh", "Card Solitaire New Landscape", "2026-07-28", 89, 86, 83, 80, "03091e0b83dd4efb826dc65d73393e9e"],
@@ -114,6 +123,76 @@ var games = [
 // features   List of game highlights (displayed on detail page)
 // tags       Topic tags (for tag aggregation pages and SEO optimization)
 var gameDetails = {
+        "Dynamons_4": {
+        gameId: "abbcaef3d1294f5ab7c5b77a2c727baa",
+        desc: "Play Dynamons 4 free online no download - the best monster battle RPG game for kids. Collect evolve train creatures in this unblocked HTML5 browser adventure game playable on mobile and desktop.",
+        players: "3.6k",
+        rating: "4.7",
+        overview: "Dynamons 4 is the best free online monster battle RPG game you can play right now with no download required. This unblocked HTML5 browser game delivers an exciting sequel to the beloved Dynamons series, perfectly playable on both mobile phones and desktop computers. Get ready to train and win battles with your team of unique Dynamons as you explore vibrant fantasy worlds. Collect rare mystical creatures, evolve them into powerful forms, and help them grow stronger to come out on top and be the very best trainer. Perfect for kids and RPG fans, this free adventure game features deep turn-based combat, a huge roster of collectible creatures, and an epic story-driven campaign. Play instantly in your browser - no installation, no signup, just pure monster catching RPG fun.",
+        howToPlay: "Play Dynamons 4 free on any device: explore the world map to encounter wild Dynamons and challenge other trainers. Use turn-based battle commands to attack, defend, or use special skills against your opponent. Catch weakened Dynamons to add them to your team and unlock new creatures. Level up your Dynamons to make them stronger and evolve them into more powerful forms. Build your ultimate team and defeat every gym leader to become the champion. No download needed - play instantly in any modern web browser.",
+        features: ["Free online monster RPG game no download", "Collect & evolve unique Dynamons creatures", "Turn-based strategic battle system", "Vibrant fantasy world exploration", "Mobile friendly HTML5 game", "Deep team customization & builds", "Epic story campaign mode"],
+        tags: ["RPG", "Monster", "Adventure", "Collect", "Evolve", "Free Online Game", "HTML5", "Mobile Friendly", "Single Player", "Browser Game", "Turn Based", "No Download"]
+    },
+    "Steal_A_Fish": {
+        gameId: "d9afb8cc970c48c4b7cacef65a5aef61",
+        desc: "Play Steal A Fish free online no download - the best underwater stealth action game. Sneak through deep sea steal fish escape danger in this unblocked HTML5 browser simulator game.",
+        players: "2.2k",
+        rating: "4.5",
+        overview: "Steal A Fish is the best free online underwater stealth action game you can play instantly with no download required. This unblocked HTML5 browser simulator dives you straight into a thrilling underwater world where stealth meets chaos in fast-paced adventure gameplay, and works great on both mobile and desktop. Sneak through the deep sea, steal valuable fish from guarded areas, and escape before danger catches up to you. The deeper you go, the greater the risk and the bigger the reward. Perfect for quick action sessions, this free underwater game features multiple depth levels, increasing difficulty, and satisfying stealth mechanics. Play now directly in your browser - no installation, no signup, just deep sea adventure fun.",
+        howToPlay: "Play Steal A Fish free on desktop and mobile: use arrow keys or touch controls to navigate your character through underwater environments. Sneak past guards and dangerous sea creatures to reach valuable fish targets. Grab the fish and make your escape back to the surface without being spotted. Collect coins and rewards for successful heists to unlock better gear and abilities. Progress through deeper, more dangerous ocean zones with bigger rewards. No download needed - dive in instantly in any modern web browser.",
+        features: ["Free online underwater stealth action game", "Deep sea exploration & heist gameplay", "Multiple difficulty depth levels", "Sneak & escape mechanics", "Mobile friendly HTML5 game", "Increasing risk & reward system", "Smooth underwater physics"],
+        tags: ["Action", "Stealth", "Underwater", "Adventure", "Simulator", "Free Online Game", "HTML5", "Mobile Friendly", "Single Player", "Browser Game", "Ocean", "No Download"]
+    },
+    "Dynamons_5": {
+        gameId: "53bb9433a5324091a4b29544ea0f93dd",
+        desc: "Play Dynamons 5 free online no download - the best monster collecting RPG sequel. Explore 4 temples catch evolve Dynamons in this unblocked HTML5 browser adventure game.",
+        players: "3.9k",
+        rating: "4.8",
+        overview: "Dynamons 5 is the best free online monster collecting RPG adventure you can play right now with no download required. This unblocked HTML5 browser game brings a brand new Dynamons adventure from the studio that created Dynamons 4 and Dynamons World, and works perfectly on both mobile and desktop. Explore four unique worlds including the Water Temple, Fire Temple, Electric Temple, and the perilous mysterious Legendary Cave. Collect cute, strong, and mystical Dynamons as you traverse the colorful fantasy world. You will start with a small team, but throughout the game you can collect new creatures and customize your squad. Perfect for RPG fans, this free game features deeper battle mechanics, more creatures than ever, and hours of exploration gameplay.",
+        howToPlay: "Play Dynamons 5 free on any device: travel across the world map to explore temples and caves. Encounter wild Dynamons in turn-based battles and use strategic attacks to weaken them. Catch new Dynamons to expand your collection and build your dream team. Level up your creatures and evolve them into stronger forms. Challenge powerful temple guardians and legendary bosses as you progress. Customize your squad to create the ultimate battle team. No download needed - play instantly in any modern web browser.",
+        features: ["Free online monster RPG sequel no download", "Four unique temple worlds to explore", "Collect & evolve mystical Dynamons", "Deep turn-based battle mechanics", "Mobile friendly HTML5 game", "Full squad customization system", "Legendary cave endgame content"],
+        tags: ["RPG", "Monster", "Adventure", "Collect", "Evolve", "Temples", "Free Online Game", "HTML5", "Mobile Friendly", "Single Player", "Browser Game", "Fantasy", "No Download"]
+    },
+    "Annoying_Boss_Punch_Game": {
+        gameId: "bd9cc9da45b04ee293306209653d8cfb",
+        desc: "Play Annoying Boss Punch Game free online no download - the best funny office stress relief game. Punch kick slap your boss in this unblocked HTML5 browser action game for all ages.",
+        players: "2.7k",
+        rating: "4.6",
+        overview: "Annoying Boss Punch Game is the best free online funny stress relief game you can play instantly with no download required. This unblocked HTML5 browser action game lets you step into the craziest office stress-relief adventure, and works great on both mobile and desktop devices. Smash, slap, punch, and kick your annoying boss in this hilarious web action game built for pure fun and endless entertainment. Tired of boring meetings, overtime pressure, and nonstop office lectures? Release your stress with crazy reactions, funny animations, and chaotic office destruction. Throw punches, launch flying chappals, smash eggs, use water balloons, and create total office madness. Perfect for quick breaks, this free casual game delivers pure laugh-out-loud stress relief.",
+        howToPlay: "Play Annoying Boss Punch Game free on any device: tap or click on different attack options to unleash various funny moves on your boss. Try punches, kicks, slaps, flying shoes, eggs, water balloons, and more chaotic weapons. Each attack deals damage and triggers hilarious reaction animations. Unlock new crazy weapons and attack styles as you progress through the game. Keep dealing damage to fill your stress relief meter and unlock bonus levels. No installation needed - play directly in your web browser for instant stress relief.",
+        features: ["Free online funny stress relief game", "Multiple crazy attack weapons", "Hilarious boss reaction animations", "Chaotic office destruction", "Mobile friendly HTML5 game", "Unlockable weapons & levels", "Pure casual entertainment fun"],
+        tags: ["Action", "Casual", "Funny", "Stress Relief", "Office", "Free Online Game", "HTML5", "Mobile Friendly", "Single Player", "Browser Game", "Comedy", "No Download"]
+    },
+    "Bubble_Shooter_Crystal_Hunt": {
+        gameId: "11abb92c950f4b29a60b36037fde6951",
+        desc: "Play Bubble Shooter Crystal Hunt free online no download - the best endless bubble popping puzzle game. Pop bubbles collect crystals beat the wall in this unblocked HTML5 browser game for all ages.",
+        players: "2.1k",
+        rating: "4.5",
+        overview: "Bubble Shooter Crystal Hunt is the best free online endless bubble shooting puzzle game you can play right now with no download required. This unblocked HTML5 browser game delivers exciting bubble-popping action where players collect target bubbles along with rare magical crystals, and works perfectly on mobile and desktop devices. Aim carefully and match three or more bubbles of the same color to clear space while the bubble wall slowly moves toward the border line, increasing tension with every shot. Crystals are hidden within bubble clusters and must also be collected to progress and boost your score. With endless levels and increasing difficulty, this free bubble shooter offers addictive casual puzzle fun for players of all ages.",
+        howToPlay: "Play Bubble Shooter Crystal Hunt free on any device: aim your bubble shooter and tap to fire a bubble. Match 3 or more bubbles of the same color to pop them and clear space on the board. Collect the magical crystals hidden in bubble clusters to increase your score and advance through levels. The bubble wall will slowly move down toward you - do not let it cross the border line, or the game will end. Use special power-up bubbles to clear large sections and collect crystals faster. No download needed - play instantly in any modern web browser.",
+        features: ["Free online endless bubble shooter game", "Magical crystal collection gameplay", "Slowly advancing bubble wall", "Special power-up bubbles", "Mobile friendly HTML5 game", "Increasing difficulty tension", "Classic bubble popping fun"],
+        tags: ["Puzzle", "Bubble Shooter", "Endless", "Crystal", "Casual", "Free Online Game", "HTML5", "Mobile Friendly", "Single Player", "Browser Game", "Match", "No Download"]
+    },
+    "World_Wars_Tanks": {
+        gameId: "7fd03dcfe17541c9a7749c50dcfe25de",
+        desc: "Play World Wars Tanks free online no download - the best WW2 tactical tank arcade game. Choose your faction battle historic tanks in this unblocked HTML5 browser strategy war game.",
+        players: "2.9k",
+        rating: "4.7",
+        overview: "World Wars Tanks is the best free online tactical tank arcade game dedicated to the major battles of World War II, playable instantly with no download required. This unblocked HTML5 browser strategy game puts you in command of authentic WWII tanks across historic battlefields, and works great on both mobile and desktop. Choose one of four main factions: USSR with durable widely produced tanks and excellent cross-country ability; Germany with powerful armor and highly accurate guns; USA with balanced vehicles and good mobility; UK with heavy armor and powerful guns. Command iconic tanks like the Kpfw. IV, M Sherman, M Lee, and more across intense arcade battles. Perfect for war game fans, this free title delivers fast-paced tactical tank combat action.",
+        howToPlay: "Play World Wars Tanks free on desktop and mobile: use arrow keys to maneuver your tank across the WWII battlefield. Aim your turret and fire at enemy tanks to destroy them and win each battle. Choose your faction and tank before each mission to match your playstyle. Use cover and terrain strategically to avoid enemy fire while lining up your shots. Progress through historic battle campaigns and unlock more powerful tanks. Complete objectives to earn medals and climb the ranks. No download needed - battle instantly in any modern web browser.",
+        features: ["Free online WW2 tank arcade game", "Four playable historic factions", "Authentic WWII tank roster", "Tactical arcade combat gameplay", "Mobile friendly HTML5 game", "Historic battle campaigns", "Upgrade & unlock system"],
+        tags: ["Strategy", "Action", "Tanks", "WW2", "War", "Arcade", "Free Online Game", "HTML5", "Mobile Friendly", "Single Player", "Browser Game", "Military", "No Download"]
+    },
+    "Farm_vs_Zombies": {
+        gameId: "557d5359337f4ed6aa97d2f1da0acf41",
+        desc: "Play Farm vs Zombies free online no download - the best tower defense survival strategy game. Plant defenses protect your farm from zombies in this unblocked HTML5 browser game for all ages.",
+        players: "3.2k",
+        rating: "4.6",
+        overview: "Farm vs Zombies is the best free online tower defense survival strategy game you can play instantly with no download required. This unblocked HTML5 browser game pits a brave farmer against hordes of hungry undead, and works perfectly on both mobile and desktop computers. The undead are hungry, but this farmer is not backing down. Plant mutant defensive plants, harvest resources in real-time, and protect your homestead across waves of zombie attacks. Strategically place your defenses, manage your resources wisely, and upgrade your plants to stop even the strongest zombie hordes. Perfect for strategy and tower defense fans, this free survival game features multiple farm zones, increasing difficulty waves, and satisfying tactical gameplay.",
+        howToPlay: "Play Farm vs Zombies free on any device: plant defensive crops and plants along the zombie path to attack incoming enemies. Collect sun and resources to plant more defenses and upgrade existing ones. Harvest resources in real-time to build up your farm defenses faster. Stop every zombie from reaching your farmhouse to survive each wave. Unlock new mutant plants and stronger defenses as you progress. Survive all waves to complete each farm zone and unlock new areas. No installation needed - play directly in your web browser.",
+        features: ["Free online tower defense strategy game", "Plant mutant farm defenses", "Real-time resource harvesting", "Multiple zombie types & waves", "Mobile friendly HTML5 game", "Farm homestead setting", "Upgradeable defense system"],
+        tags: ["Strategy", "Tower Defense", "Survival", "Zombies", "Farm", "Free Online Game", "HTML5", "Mobile Friendly", "Single Player", "Browser Game", "Casual", "No Download"]
+    },
         "Hawaii_Match_6": {
         gameId: "1a6495d26ac541c8820eca4527ed6cfa",
         desc: "Play Hawaii Match 6 free online no download - the best tropical match 3 puzzle game for adults. Match exotic fruits flowers treasures in this relaxing unblocked HTML5 browser game playable on mobile and desktop.",
