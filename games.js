@@ -16,6 +16,11 @@
 // [11] iPhonePop  iPhone popularity score
 // [12] gameId     Unique GameDistribution platform ID
 var games = [
+        ["Witchy_Sisters_Relax_Puzzle", "/games/witchy-sisters-relax-puzzle/", "", "", "https://img.gamedistribution.com/155fcf825be24068b12da9a1127695d9-512x384.jpg", "Desktop iPadOld iPadNew iPhone AndroidLow AndroidMid AndroidHigh", "Puzzle Match Sort New Landscape", "2026-08-06", 90, 88, 85, 82, "155fcf825be24068b12da9a1127695d9"],
+    ["Siege_Break", "/games/siege-break/", "", "", "https://img.gamedistribution.com/23b2fe26392247f49fb73598a5797e16-512x384.jpg", "Desktop iPadOld iPadNew iPhone AndroidLow AndroidMid AndroidHigh", "Strategy Defense New Portrait", "2026-08-06", 92, 89, 86, 83, "23b2fe26392247f49fb73598a5797e16"],
+    ["Dynamons_9", "/games/dynamons-9/", "", "", "https://img.gamedistribution.com/200443b8a09a402ea935508e948f04fb-512x384.jpg", "Desktop iPadOld iPadNew iPhone AndroidLow AndroidMid AndroidHigh", "RPG Monster New Landscape", "2026-08-06", 94, 92, 90, 87, "200443b8a09a402ea935508e948f04fb"],
+    ["Tropical_Match_2", "/games/tropical-match-2/", "", "", "https://img.gamedistribution.com/59719ccbc7764864bae2c4c7aea820b6-512x384.jpg", "Desktop iPadOld iPadNew iPhone AndroidLow AndroidMid AndroidHigh", "Match3 Tropical New Landscape", "2026-08-06", 91, 89, 86, 84, "59719ccbc7764864bae2c4c7aea820b6"],
+    ["Solitaire_Summer_Klondike", "/games/solitaire-summer-klondike/", "", "", "https://img.gamedistribution.com/d882b7ce8c7145c5b20bef128bd2fabf-1280x720.jpg", "Desktop iPadOld iPadNew iPhone AndroidLow AndroidMid AndroidHigh", "Card Solitaire New Landscape", "2026-08-06", 89, 87, 84, 81, "d882b7ce8c7145c5b20bef128bd2fabf"],
 
     ["Dynamons_4", "/games/dynamons-4/", "", "", "https://img.gamedistribution.com/abbcaef3d1294f5ab7c5b77a2c727baa-512x384.jpeg", "Desktop iPadOld iPadNew iPhone AndroidLow AndroidMid AndroidHigh", "RPG New Landscape", "2026-07-31", 92, 90, 88, 85, "abbcaef3d1294f5ab7c5b77a2c727baa"],
     ["Steal_A_Fish", "/games/steal-a-fish/", "", "", "https://img.gamedistribution.com/d9afb8cc970c48c4b7cacef65a5aef61-512x384.jpg", "Desktop iPadOld iPadNew iPhone AndroidLow AndroidMid AndroidHigh", "Action New Landscape", "2026-07-31", 89, 86, 83, 80, "d9afb8cc970c48c4b7cacef65a5aef61"],
@@ -123,6 +128,57 @@ var games = [
 // features   List of game highlights (displayed on detail page)
 // tags       Topic tags (for tag aggregation pages and SEO optimization)
 var gameDetails = {
+
+        "Witchy_Sisters_Relax_Puzzle": {
+        gameId: "155fcf825be24068b12da9a1127695d9",
+        desc: "Play Witchy Sisters Relax Puzzle free unblocked online no download no install, fun witch match sort hidden object brain training puzzle game for kids & adults, school allowed HTML browser game playable on mobile phone tablet desktop PC offline supported.",
+        players: "2.4k",
+        rating: "4.6",
+        overview: "Witchy Sisters – Relax Puzzle is top free unblocked brain training puzzle game you can play online without any download or installation, fully school allowed and compatible with mobile, tablet and desktop devices with offline playable mode. This relaxing witch-themed casual game combines three popular brain game mechanics: hidden object find mode, color marble sort puzzles and classic tile match gameplay, perfect for kids, teenagers and adults to release stress and train logical thinking. Hundreds of unique hand-drawn witch puzzle levels with zero time limit, soft relaxing background music and simple one tap touch controls. Unlock magical witch decorations, wallpapers and bonus rewards after clearing puzzle boards. This free HTML5 unblock browser game needs no registration, you can launch instantly at school, home or office anytime for quick brain relaxation breaks.",
+        howToPlay: "Play Witchy Sisters Relax Puzzle unblocked free on all devices: pick Find, Sort or Match game mode to start brain training puzzles. Tap identical witch tiles to match and clear them in match mode; drag colorful pieces into matching trays for sorting puzzles; search the whole screen to find hidden magical witch items. Complete all level objectives to unlock new witch puzzle stages and exclusive gallery wallpapers. Tap hint button when stuck on hard brain teasers, no ads interruption during casual gameplay.",
+        features: ["Free unblocked brain training puzzle for kids adults", "3 mixed game modes: Find Sort Match Hidden Object", "No time limit stress free relaxing witch theme", "Hundreds of unique logic puzzle levels", "Mobile tablet desktop cross platform support", "Offline playable without internet connection", "School allowed no install instant browser play"],
+        tags: ["Puzzle", "Match", "Sort", "Hidden Object", "Brain Training", "Relaxing", "Witch", "Unblocked Games", "Free To Play", "No Download", "No Install", "School Allowed", "HTML5", "Mobile Friendly", "Kids Game", "Adult Casual", "Single Player", "Browser Game", "Offline Playable"]
+    },
+    "Siege_Break": {
+        gameId: "23b2fe26392247f49fb73598a5797e16",
+        desc: "Play Siege Break unblocked free online no download, fantasy hero tower defense strategy game for boys teens adults, offline playable school safe HTML browser game works on mobile tablet desktop all screens.",
+        players: "2.7k",
+        rating: "4.7",
+        overview: "Siege Break is free unblocked fantasy tower defense strategy game playable online without downloading any files, school safe and offline supported for mobile, tablet and desktop computers. This vertical portrait defense game focuses on tactical hero deployment, ideal for boys, teenagers and adult strategy game fans who love castle siege survival gameplay. Recruit dozens of unique fantasy warrior heroes, refresh your hero roster anytime to unlock rare powerful units, arrange defense slots around your fortress to block endless monster attack waves. Monitor base HP value carefully to prevent castle breakdown, survive every wave to unlock new maps and legendary hero recruits. This free HTML5 unblock browser strategy game requires no account signup, you can play instantly at school, home or break time with smooth vertical mobile touch controls.",
+        howToPlay: "Play Siege Break unblocked free on all mobile & desktop devices: refresh hero pool to draw new defensive warrior units. Drag fantasy heroes into empty defense slots surrounding your castle fortress. Tap confirm to start incoming monster attack waves. Replace weak heroes during battles to protect your base HP. Survive all enemy rounds to unlock harder siege stages and stronger epic heroes for future tower defense missions.",
+        features: ["Unblocked fantasy tower defense strategy game", "Vertical portrait mobile optimized layout", "Hero recruit refresh unlock system", "Castle siege monster wave survival mode", "Offline playable without WiFi network", "School safe no violent content", "Instant free browser play no install"],
+        tags: ["Strategy", "Tower Defense", "Defense", "Fantasy", "Hero Game", "Siege", "Unblocked Games", "Free To Play", "No Download", "Offline Playable", "School Safe", "HTML5", "Mobile Friendly", "Boys Game", "Single Player", "Browser Game", "Tactical"]
+    },
+    "Dynamons_9": {
+        gameId: "200443b8a09a402ea935508e948f04fb",
+        desc: "Play Dynamons 9 unblocked free online no download, Halloween monster capture turn based RPG game for kids teens, offline playable school friendly HTML browser game for mobile tablet desktop PC.",
+        players: "4.1k",
+        rating: "4.8",
+        overview: "Dynamons 9 is popular free unblocked monster collecting RPG game you can play online instantly with zero download, school friendly and offline playable on mobile, tablet and desktop screens. This Halloween themed creature battle RPG continues the famous Dynamons series loved by kids and young teens, bringing two brand new explorable maps: spooky Halloween World and secret rare monster bonus cave. Catch exclusive Halloween limited Dynamons like Tholanyx, Scarykin, Anubolt and special skin variants of Sauryx, Zonysus. Train your monster squad, unlock Halloween exclusive special attacks and compete in 1v1 turn-based PvP battles against rival trainers. This unblock HTML5 monster game needs no installation, perfect for school breaks and family casual gaming with kid-safe cartoon visuals.",
+        howToPlay: "Play Dynamons 9 unblocked free for kids & teens: travel Halloween map and hidden bonus cave to encounter wild spooky Dynamons. Weaken wild creatures in turn-based combat to capture and add them to your monster team. Equip Halloween exclusive special power ups before PvP duels, evolve your Dynamons to raise battle stats. Clear cave challenge levels to unlock legendary rare Halloween monsters and complete your full creature collection.",
+        features: ["Unblocked kids friendly monster RPG game", "Halloween exclusive limited Dynamon creatures", "2 huge explorable fantasy game worlds", "1v1 turn based PvP monster battles", "Offline playable without internet access", "School safe cartoon art style", "No download instant browser gameplay"],
+        tags: ["RPG", "Monster Capture", "Collect Creatures", "Turn Based Battle", "Halloween", "Unblocked Games", "Free To Play", "No Download", "Offline Playable", "School Friendly", "Kids Game", "HTML5", "Mobile Friendly", "Adventure", "Single Player", "Browser Game"]
+    },
+    "Tropical_Match_2": {
+        gameId: "59719ccbc7764864bae2c4c7aea820b6",
+        desc: "Play Tropical Match 2 unblocked free online no download, tropical fruit match 3 puzzle game for kids adults, offline relaxing brain game school allowed HTML browser mobile desktop supported.",
+        players: "3.0k",
+        rating: "4.6",
+        overview: "Tropical Match 2 is top free unblocked match 3 puzzle game playable online without install files, offline relaxing brain training fun for kids and adults, fully school allowed for mobile, tablet and desktop devices. This bright tropical island match3 sequel contains over 1250 unique colorful puzzle levels filled with juicy fruits, tropical flowers and fun beach obstacles like clouds and algae. Follow cute parrot Coco to complete daily treasure missions, unlock hidden tropical island maps and earn exclusive summer rewards. Slow relaxing island background music, simple swipe match controls and zero forced pop ups. This free HTML5 unblock casual puzzle game launches instantly at school or home, ideal for short stress relief brain breaks all ages.",
+        howToPlay: "Play Tropical Match 2 unblocked free on all devices: swap adjacent tropical fruit and flower tiles to match 3 or more identical items. Create big combo matches to spawn powerful clearing boosters. Remove cloud and algae obstacles to reach each level’s target objectives. Finish daily treasure quests to unlock new tropical beach puzzle zones and rare summer bonus prizes.",
+        features: ["Unblocked tropical match 3 brain puzzle game", "1250+ unique summer themed puzzle levels", "Cute parrot Coco companion character", "Daily treasure reward mission system", "Offline playable without WiFi", "Stress free relaxing casual gameplay", "School allowed no install browser play"],
+        tags: ["Match3", "Puzzle", "Tropical Island", "Fruit Match", "Summer", "Relaxing Brain Game", "Unblocked Games", "Free To Play", "No Download", "Offline Playable", "School Allowed", "HTML5", "Mobile Friendly", "Kids & Adults", "Single Player", "Browser Game"]
+    },
+    "Solitaire_Summer_Klondike": {
+        gameId: "d882b7ce8c7145c5b20bef128bd2fabf",
+        desc: "Play Solitaire Summer Klondike unblocked free online no download, classic beach klondike card game for seniors adults kids, offline relaxing casual HTML browser game all devices supported.",
+        players: "2.6k",
+        rating: "4.5",
+        overview: "Solitaire Summer: Klondike is free unblocked classic klondike solitaire card game playable online without any installation, offline relaxing casual fun for seniors, adults and older kids, compatible with mobile, tablet and desktop screens. This summer beach themed solitaire refreshes traditional klondike rules with warm ocean background sounds and sunny tropical beach visuals to calm your mind. Sort playing cards into four suit piles from Ace to King by alternating black and red colors, use built-in hint and undo tools to solve tricky card layouts. Track your daily play streaks and unlock custom summer card back skins. This unblock HTML5 card game is school and office safe, launch instantly for long relaxing leisure time breaks.",
+        howToPlay: "Play Solitaire Summer Klondike unblocked free: move alternating colored cards onto tableau piles in descending order. Shift all cards to four foundation stacks sorted by suit from low Ace to high King. Tap stock pile to draw new cards when no valid moves exist. Use undo and hint functions to pass hard solitaire hands, complete full board clears to unlock exclusive beach card customizations.",
+        features: ["Unblocked classic klondike solitaire card game", "Summer tropical beach relaxing theme", "Hint & undo helper tools built-in", "Daily play streak tracking system", "Offline playable without internet connection", "Senior & adult friendly casual play", "No download instant browser access"],
+        tags: ["Card Game", "Solitaire", "Klondike", "Summer Beach", "Relaxing", "Unblocked Games", "Free To Play", "No Download", "Offline Playable", "Senior Game", "Adult Casual", "HTML5", "Mobile Friendly", "Single Player", "Browser Game", "Leisure"]
+    },
         "Dynamons_4": {
         gameId: "abbcaef3d1294f5ab7c5b77a2c727baa",
         desc: "Play Dynamons 4 free online no download - the best monster battle RPG game for kids. Collect evolve train creatures in this unblocked HTML5 browser adventure game playable on mobile and desktop.",
